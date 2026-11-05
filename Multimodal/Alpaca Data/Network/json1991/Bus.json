@@ -1,0 +1,332 @@
+[
+  {
+    "instruction": "Interpret the load characteristics of bus 1.",
+    "input": "Bus=1, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 1 is a load bus (PQ node), belonging to AC system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Bus 3 is a generator node, please explain its operating status.",
+    "input": "Bus=3, Type=2, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=27.27991137308433, QL=24.90025103540663, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=ACIC, Apparatus=0, Number=0",
+    "output": "Bus 3 is a generator bus (PV node), belonging to AC interconnecting system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 27.280 pu, reactive 24.900 pu. Reactive power limits: minimum -1.50 pu, maximum 1.50 pu."
+  },
+  {
+    "instruction": "Describe the voltage, power and other parameters of bus 4.",
+    "input": "Bus=4, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=42.21518276819227, QL=21.17986591702182, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 4 is a load bus (PQ node), belonging to AC system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 42.215 pu, reactive 21.180 pu."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 5.",
+    "input": "Bus=5, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=ACIC, Apparatus=0, Number=0",
+    "output": "Bus 5 is a load bus (PQ node), belonging to AC interconnecting system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Interpret the load characteristics of bus 8.",
+    "input": "Bus=8, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 8 is a load bus (PQ node), belonging to AC system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 9.",
+    "input": "Bus=9, Type=2, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 9 is a generator bus (PV node), belonging to AC system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Reactive power limits: minimum -1.50 pu, maximum 1.50 pu."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 10.",
+    "input": "Bus=10, Type=3, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=1407.896579964616, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 10 is a slack bus (Vθ node), belonging to AC system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Generation power: active 1407.897 pu, reactive 0.000 pu."
+  },
+  {
+    "instruction": "Interpret the load characteristics of bus 11.",
+    "input": "Bus=11, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=60.85545301302594, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=ACIC, Apparatus=0, Number=0",
+    "output": "Bus 11 is a load bus (PQ node), belonging to AC interconnecting system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Generation power: active 60.855 pu, reactive 0.000 pu."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 17.",
+    "input": "Bus=17, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=174.7824776502068, QL=95.95149301627566, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 17 is a load bus (PQ node), belonging to AC system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 174.782 pu, reactive 95.951 pu."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 19.",
+    "input": "Bus=19, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=32.06957139676609, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=ACIC, Apparatus=0, Number=0",
+    "output": "Bus 19 is a load bus (PQ node), belonging to AC interconnecting system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Generation power: active 32.070 pu, reactive 0.000 pu."
+  },
+  {
+    "instruction": "Bus 20 is a load node, please explain its operating status.",
+    "input": "Bus=20, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 20 is a load bus (PQ node), belonging to AC system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 21.",
+    "input": "Bus=21, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 21 is a load bus (PQ node), belonging to AC system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Interpret the load characteristics of bus 23.",
+    "input": "Bus=23, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=278.1326829132561, QL=88.87265230276529, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 23 is a load bus (PQ node), belonging to AC system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 278.133 pu, reactive 88.873 pu."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 26.",
+    "input": "Bus=26, Type=2, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=427.2862274082721, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 26 is a generator bus (PV node), belonging to AC system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Generation power: active 427.286 pu, reactive 0.000 pu. Reactive power limits: minimum -1.50 pu, maximum 1.50 pu. Active power regulation range: 384.558 pu to 470.015 pu."
+  },
+  {
+    "instruction": "Interpret the generator characteristics of bus 29.",
+    "input": "Bus=29, Type=2, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=180.9490477550258, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 29 is a generator bus (PV node), belonging to AC system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Generation power: active 180.949 pu, reactive 0.000 pu. Reactive power limits: minimum -1.50 pu, maximum 1.50 pu. Active power regulation range: 162.854 pu to 199.044 pu."
+  },
+  {
+    "instruction": "Describe the voltage, power and other parameters of bus 33.",
+    "input": "Bus=33, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=7.522153877414592, QL=4.667726322697368, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 33 is a load bus (PQ node), belonging to AC system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 7.522 pu, reactive 4.668 pu."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 34.",
+    "input": "Bus=34, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=95.91259311131226, QL=33.8302465266341, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=ACIC, Apparatus=0, Number=0",
+    "output": "Bus 34 is a load bus (PQ node), belonging to AC interconnecting system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 95.913 pu, reactive 33.830 pu."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 35.",
+    "input": "Bus=35, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=36.12422881283133, QL=25.69369921270273, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 35 is a load bus (PQ node), belonging to AC system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 36.124 pu, reactive 25.694 pu."
+  },
+  {
+    "instruction": "Bus 41 is a generator node, please explain its operating status.",
+    "input": "Bus=41, Type=2, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=206.090423626975, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=1, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 41 is a generator bus (PV node), belonging to AC system, located in area 1. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Generation power: active 206.090 pu, reactive 0.000 pu. Reactive power limits: minimum -1.50 pu, maximum 1.50 pu. Active power regulation range: 185.481 pu to 226.699 pu."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 53.",
+    "input": "Bus=53, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=281.4607166637237, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=2, ACorDCorIC=DC, Apparatus=0, Number=0",
+    "output": "Bus 53 is a load bus (PQ node), belonging to DC system, located in area 2. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 281.461 pu, reactive 0.000 pu."
+  },
+  {
+    "instruction": "Interpret the load characteristics of bus 54.",
+    "input": "Bus=54, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=2, ACorDCorIC=DC, Apparatus=0, Number=0",
+    "output": "Bus 54 is a load bus (PQ node), belonging to DC system, located in area 2. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Bus 62 is a load node, please explain its operating status.",
+    "input": "Bus=62, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=2, ACorDCorIC=DC, Apparatus=0, Number=0",
+    "output": "Bus 62 is a load bus (PQ node), belonging to DC system, located in area 2. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Describe the voltage, power and other parameters of bus 64.",
+    "input": "Bus=64, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=12.48606960939117, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=2, ACorDCorIC=DC, Apparatus=0, Number=0",
+    "output": "Bus 64 is a load bus (PQ node), belonging to DC system, located in area 2. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Generation power: active 12.486 pu, reactive 0.000 pu."
+  },
+  {
+    "instruction": "Interpret the swing characteristics of bus 65.",
+    "input": "Bus=65, Type=3, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=356.9582546959971, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=2, ACorDCorIC=DC, Apparatus=0, Number=0",
+    "output": "Bus 65 is a slack bus (Vθ node), belonging to DC system, located in area 2. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Generation power: active 356.958 pu, reactive 0.000 pu."
+  },
+  {
+    "instruction": "Bus 69 is a load node, please explain its operating status.",
+    "input": "Bus=69, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=2, ACorDCorIC=DC, Apparatus=0, Number=0",
+    "output": "Bus 69 is a load bus (PQ node), belonging to DC system, located in area 2. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 76.",
+    "input": "Bus=76, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=3, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 76 is a load bus (PQ node), belonging to AC system, located in area 3. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Interpret the load characteristics of bus 77.",
+    "input": "Bus=77, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=212.4776934126735, QL=112.4041473355608, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=3, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 77 is a load bus (PQ node), belonging to AC system, located in area 3. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 212.478 pu, reactive 112.404 pu."
+  },
+  {
+    "instruction": "Bus 82 is a load node, please explain its operating status.",
+    "input": "Bus=82, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=3, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 82 is a load bus (PQ node), belonging to AC system, located in area 3. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Interpret the generator characteristics of bus 89.",
+    "input": "Bus=89, Type=2, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=63.76115755862984, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=3, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 89 is a generator bus (PV node), belonging to AC system, located in area 3. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Generation power: active 63.761 pu, reactive 0.000 pu. Reactive power limits: minimum -1.50 pu, maximum 1.50 pu. Active power regulation range: 57.385 pu to 70.137 pu."
+  },
+  {
+    "instruction": "Describe the voltage, power and other parameters of bus 92.",
+    "input": "Bus=92, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=7.297828126599507, QL=5.102319464416659, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=3, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 92 is a load bus (PQ node), belonging to AC system, located in area 3. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 7.298 pu, reactive 5.102 pu."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 97.",
+    "input": "Bus=97, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=188.6303488710463, QL=96.03654809562934, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=3, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 97 is a load bus (PQ node), belonging to AC system, located in area 3. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 188.630 pu, reactive 96.037 pu."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 104.",
+    "input": "Bus=104, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=84.20927940900373, QL=73.67613440338833, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=3, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 104 is a load bus (PQ node), belonging to AC system, located in area 3. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 84.209 pu, reactive 73.676 pu."
+  },
+  {
+    "instruction": "Bus 105 is a load node, please explain its operating status.",
+    "input": "Bus=105, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=133.2330006927016, QL=82.79617260798007, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=3, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 105 is a load bus (PQ node), belonging to AC system, located in area 3. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 133.233 pu, reactive 82.796 pu."
+  },
+  {
+    "instruction": "Describe the voltage, power and other parameters of bus 111.",
+    "input": "Bus=111, Type=2, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=13.04780465300255, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=3, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 111 is a generator bus (PV node), belonging to AC system, located in area 3. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Generation power: active 13.048 pu, reactive 0.000 pu. Reactive power limits: minimum -1.50 pu, maximum 1.50 pu. Active power regulation range: 11.743 pu to 14.353 pu."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 113.",
+    "input": "Bus=113, Type=2, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=3, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 113 is a generator bus (PV node), belonging to AC system, located in area 3. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Reactive power limits: minimum -1.50 pu, maximum 1.50 pu."
+  },
+  {
+    "instruction": "Describe the voltage, power and other parameters of bus 116.",
+    "input": "Bus=116, Type=2, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=70.39634666007574, QL=39.10908757015729, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=3, ACorDCorIC=ACIC, Apparatus=0, Number=0",
+    "output": "Bus 116 is a generator bus (PV node), belonging to AC interconnecting system, located in area 3. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 70.396 pu, reactive 39.109 pu. Reactive power limits: minimum -1.50 pu, maximum 1.50 pu."
+  },
+  {
+    "instruction": "Describe the voltage, power and other parameters of bus 126.",
+    "input": "Bus=126, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=3, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 126 is a load bus (PQ node), belonging to AC system, located in area 3. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 127.",
+    "input": "Bus=127, Type=3, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=235.108284882824, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=4, ACorDCorIC=DCIC, Apparatus=0, Number=0",
+    "output": "Bus 127 is a slack bus (Vθ node), belonging to DC interconnecting system, located in area 4. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 235.108 pu, reactive 0.000 pu."
+  },
+  {
+    "instruction": "Describe the voltage, power and other parameters of bus 130.",
+    "input": "Bus=130, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=4, ACorDCorIC=DC, Apparatus=0, Number=0",
+    "output": "Bus 130 is a load bus (PQ node), belonging to DC system, located in area 4. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Bus 132 is a load node, please explain its operating status.",
+    "input": "Bus=132, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=141.2630653833127, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=4, ACorDCorIC=DCIC, Apparatus=0, Number=0",
+    "output": "Bus 132 is a load bus (PQ node), belonging to DC interconnecting system, located in area 4. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Generation power: active 141.263 pu, reactive 0.000 pu."
+  },
+  {
+    "instruction": "Bus 134 is a swing node, please explain its operating status.",
+    "input": "Bus=134, Type=3, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=69.7287959433076, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=4, ACorDCorIC=DC, Apparatus=0, Number=0",
+    "output": "Bus 134 is a slack bus (Vθ node), belonging to DC system, located in area 4. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Generation power: active 69.729 pu, reactive 0.000 pu."
+  },
+  {
+    "instruction": "Interpret the load characteristics of bus 138.",
+    "input": "Bus=138, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=4, ACorDCorIC=DC, Apparatus=0, Number=0",
+    "output": "Bus 138 is a load bus (PQ node), belonging to DC system, located in area 4. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 147.",
+    "input": "Bus=147, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=4, ACorDCorIC=DC, Apparatus=0, Number=0",
+    "output": "Bus 147 is a load bus (PQ node), belonging to DC system, located in area 4. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Bus 148 is a swing node, please explain its operating status.",
+    "input": "Bus=148, Type=3, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=10.01392373267921, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=4, ACorDCorIC=DCIC, Apparatus=0, Number=0",
+    "output": "Bus 148 is a slack bus (Vθ node), belonging to DC interconnecting system, located in area 4. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 10.014 pu, reactive 0.000 pu."
+  },
+  {
+    "instruction": "Bus 149 is a load node, please explain its operating status.",
+    "input": "Bus=149, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=4, ACorDCorIC=DC, Apparatus=0, Number=0",
+    "output": "Bus 149 is a load bus (PQ node), belonging to DC system, located in area 4. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Interpret the load characteristics of bus 151.",
+    "input": "Bus=151, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=4, ACorDCorIC=DC, Apparatus=0, Number=0",
+    "output": "Bus 151 is a load bus (PQ node), belonging to DC system, located in area 4. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Bus 158 is a load node, please explain its operating status.",
+    "input": "Bus=158, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=5, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 158 is a load bus (PQ node), belonging to AC system, located in area 5. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Interpret the load characteristics of bus 163.",
+    "input": "Bus=163, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=119.0911632317441, QL=65.63084530311166, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=5, ACorDCorIC=ACIC, Apparatus=0, Number=0",
+    "output": "Bus 163 is a load bus (PQ node), belonging to AC interconnecting system, located in area 5. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 119.091 pu, reactive 65.631 pu."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 164.",
+    "input": "Bus=164, Type=2, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=14.21582296735472, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=5, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 164 is a generator bus (PV node), belonging to AC system, located in area 5. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Generation power: active 14.216 pu, reactive 0.000 pu. Reactive power limits: minimum -1.50 pu, maximum 1.50 pu. Active power regulation range: 12.794 pu to 15.637 pu."
+  },
+  {
+    "instruction": "Interpret the generator characteristics of bus 165.",
+    "input": "Bus=165, Type=2, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=14.99126011811272, QL=9.128413878274138, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=5, ACorDCorIC=ACIC, Apparatus=0, Number=0",
+    "output": "Bus 165 is a generator bus (PV node), belonging to AC interconnecting system, located in area 5. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 14.991 pu, reactive 9.128 pu. Reactive power limits: minimum -1.50 pu, maximum 1.50 pu."
+  },
+  {
+    "instruction": "Bus 172 is a generator node, please explain its operating status.",
+    "input": "Bus=172, Type=2, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=5, ACorDCorIC=ACIC, Apparatus=0, Number=0",
+    "output": "Bus 172 is a generator bus (PV node), belonging to AC interconnecting system, located in area 5. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Reactive power limits: minimum -1.50 pu, maximum 1.50 pu."
+  },
+  {
+    "instruction": "Interpret the load characteristics of bus 179.",
+    "input": "Bus=179, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=111.2464363560592, QL=33.74967100056191, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=5, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 179 is a load bus (PQ node), belonging to AC system, located in area 5. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 111.246 pu, reactive 33.750 pu."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 185.",
+    "input": "Bus=185, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=5, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 185 is a load bus (PQ node), belonging to AC system, located in area 5. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Bus 186 is a load node, please explain its operating status.",
+    "input": "Bus=186, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=5, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 186 is a load bus (PQ node), belonging to AC system, located in area 5. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Interpret the load characteristics of bus 187.",
+    "input": "Bus=187, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=334.1206975410716, QL=151.104544659295, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=5, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 187 is a load bus (PQ node), belonging to AC system, located in area 5. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 334.121 pu, reactive 151.105 pu."
+  },
+  {
+    "instruction": "Bus 191 is a load node, please explain its operating status.",
+    "input": "Bus=191, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=1.5112000980479, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=5, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 191 is a load bus (PQ node), belonging to AC system, located in area 5. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 1.511 pu, reactive 0.000 pu."
+  },
+  {
+    "instruction": "Interpret the load characteristics of bus 195.",
+    "input": "Bus=195, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=5, ACorDCorIC=AC, Apparatus=0, Number=0",
+    "output": "Bus 195 is a load bus (PQ node), belonging to AC system, located in area 5. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Bus 202 is a load node, please explain its operating status.",
+    "input": "Bus=202, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=259.8932851199418, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=6, ACorDCorIC=DCIC, Apparatus=0, Number=0",
+    "output": "Bus 202 is a load bus (PQ node), belonging to DC interconnecting system, located in area 6. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 259.893 pu, reactive 0.000 pu."
+  },
+  {
+    "instruction": "Bus 203 is a load node, please explain its operating status.",
+    "input": "Bus=203, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=6, ACorDCorIC=DC, Apparatus=0, Number=0",
+    "output": "Bus 203 is a load bus (PQ node), belonging to DC system, located in area 6. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Bus 206 is a load node, please explain its operating status.",
+    "input": "Bus=206, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=6, ACorDCorIC=DCIC, Apparatus=0, Number=0",
+    "output": "Bus 206 is a load bus (PQ node), belonging to DC interconnecting system, located in area 6. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Interpret the load characteristics of bus 210.",
+    "input": "Bus=210, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=129.0575277855089, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=6, ACorDCorIC=DCIC, Apparatus=0, Number=0",
+    "output": "Bus 210 is a load bus (PQ node), belonging to DC interconnecting system, located in area 6. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 129.058 pu, reactive 0.000 pu."
+  },
+  {
+    "instruction": "Bus 212 is a load node, please explain its operating status.",
+    "input": "Bus=212, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=6, ACorDCorIC=DC, Apparatus=0, Number=0",
+    "output": "Bus 212 is a load bus (PQ node), belonging to DC system, located in area 6. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees."
+  },
+  {
+    "instruction": "Bus 215 is a swing node, please explain its operating status.",
+    "input": "Bus=215, Type=3, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=70.89042705540552, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=6, ACorDCorIC=DCIC, Apparatus=0, Number=0",
+    "output": "Bus 215 is a slack bus (Vθ node), belonging to DC interconnecting system, located in area 6. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Generation power: active 70.890 pu, reactive 0.000 pu."
+  },
+  {
+    "instruction": "Interpret the load characteristics of bus 218.",
+    "input": "Bus=218, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=0.0, QG=0, PL=88.37437597741231, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=6, ACorDCorIC=DCIC, Apparatus=0, Number=0",
+    "output": "Bus 218 is a load bus (PQ node), belonging to DC interconnecting system, located in area 6. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Load demand: active 88.374 pu, reactive 0.000 pu."
+  },
+  {
+    "instruction": "Bus 220 is a load node, please explain its operating status.",
+    "input": "Bus=220, Type=1, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=17.36041106370486, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=6, ACorDCorIC=DC, Apparatus=0, Number=0",
+    "output": "Bus 220 is a load bus (PQ node), belonging to DC system, located in area 6. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Generation power: active 17.360 pu, reactive 0.000 pu."
+  },
+  {
+    "instruction": "Please analyze the electrical parameters of bus 223.",
+    "input": "Bus=223, Type=3, Base (kV)=0, B (pu)=0, G (pu)=0, V=1, Theta=0, PG=1041.161830857363, QG=0, PL=0.0, QL=0.0, Qmin=-1.5, Qmax=1.5, Pmin=0.9, Pmax=1.1, Vmin=0, Vmax=0, Area No.=6, ACorDCorIC=DC, Apparatus=0, Number=0",
+    "output": "Bus 223 is a slack bus (Vθ node), belonging to DC system, located in area 6. Current voltage magnitude is 1.000 pu, phase angle is 0 degrees. Generation power: active 1041.162 pu, reactive 0.000 pu."
+  }
+]

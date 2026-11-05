@@ -1,0 +1,607 @@
+[
+  {
+    "instruction": "Describe the impedance parameters of line 1.0-4.0.",
+    "input": "FromBus=1.0, ToBus=4.0, R (pu)=8.14971983342294e-05, X (pu)=0.007197973042985344, Turn=1.0",
+    "output": "From bus 1.0 to bus 4.0 is a highly inductive line,  resistance is 0.000081 pu, reactance is 0.007198 pu, turn ratio is 1.000. Impedance magnitude is 0.007198 pu, impedance angle is 89.35 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 4.0 to bus 6.0.",
+    "input": "FromBus=4.0, ToBus=6.0, R (pu)=0.01429984692226867, X (pu)=0.05210503706990097, Turn=1.0",
+    "output": "From bus 4.0 to bus 6.0 is a normal resistive-inductive line,  resistance is 0.014300 pu, reactance is 0.052105 pu, turn ratio is 1.000. Impedance magnitude is 0.054032 pu, impedance angle is 74.65 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 5.0-6.0.",
+    "input": "FromBus=5.0, ToBus=6.0, R (pu)=0.009393031951365729, X (pu)=0.09692046861216029, Turn=1.0",
+    "output": "From bus 5.0 to bus 6.0 is a highly inductive line,  resistance is 0.009393 pu, reactance is 0.096920 pu, turn ratio is 1.000. Impedance magnitude is 0.097375 pu, impedance angle is 84.46 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 2.0 and 7.0?",
+    "input": "FromBus=2.0, ToBus=7.0, R (pu)=0.005215156961489059, X (pu)=0.005442023490949531, Turn=1.0",
+    "output": "From bus 2.0 to bus 7.0 is a normal resistive-inductive line,  resistance is 0.005215 pu, reactance is 0.005442 pu, turn ratio is 1.000. Impedance magnitude is 0.007537 pu, impedance angle is 46.22 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 2.0 and 10.0?",
+    "input": "FromBus=2.0, ToBus=10.0, R (pu)=0.0001413017323481289, X (pu)=0.0003425129761613194, Turn=1.0",
+    "output": "From bus 2.0 to bus 10.0 is a normal resistive-inductive line,  resistance is 0.000141 pu, reactance is 0.000343 pu, turn ratio is 1.000. Impedance magnitude is 0.000371 pu, impedance angle is 67.58 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=6.0, ToBus=13.0, R (pu)=0.08337436569557367, X (pu)=0.08945170924364167, Turn=1.0",
+    "output": "From bus 6.0 to bus 13.0 is a normal resistive-inductive line,  resistance is 0.083374 pu, reactance is 0.089452 pu, turn ratio is 1.000. Impedance magnitude is 0.122282 pu, impedance angle is 47.01 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 9.0-13.0.",
+    "input": "FromBus=9.0, ToBus=13.0, R (pu)=0.001592859087175395, X (pu)=0.02466780996562614, Turn=1.0",
+    "output": "From bus 9.0 to bus 13.0 is a highly inductive line,  resistance is 0.001593 pu, reactance is 0.024668 pu, turn ratio is 1.000. Impedance magnitude is 0.024719 pu, impedance angle is 86.31 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 11.0 to bus 13.0.",
+    "input": "FromBus=11.0, ToBus=13.0, R (pu)=0.0145834367310621, X (pu)=0.07656675037919557, Turn=1.0",
+    "output": "From bus 11.0 to bus 13.0 is a normal resistive-inductive line,  resistance is 0.014583 pu, reactance is 0.076567 pu, turn ratio is 1.000. Impedance magnitude is 0.077943 pu, impedance angle is 79.22 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 12.0-14.0.",
+    "input": "FromBus=12.0, ToBus=14.0, R (pu)=0.002148110364377732, X (pu)=0.01965367060143735, Turn=1.0",
+    "output": "From bus 12.0 to bus 14.0 is a normal resistive-inductive line,  resistance is 0.002148 pu, reactance is 0.019654 pu, turn ratio is 1.000. Impedance magnitude is 0.019771 pu, impedance angle is 83.76 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 17.0-22.0.",
+    "input": "FromBus=17.0, ToBus=22.0, R (pu)=0.0005699765849261099, X (pu)=0.006107413117902833, Turn=1.0",
+    "output": "From bus 17.0 to bus 22.0 is a highly inductive line,  resistance is 0.000570 pu, reactance is 0.006107 pu, turn ratio is 1.000. Impedance magnitude is 0.006134 pu, impedance angle is 84.67 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=15.0, ToBus=23.0, R (pu)=0.0006968393708449218, X (pu)=0.02749737159082608, Turn=1.0",
+    "output": "From bus 15.0 to bus 23.0 is a highly inductive line,  resistance is 0.000697 pu, reactance is 0.027497 pu, turn ratio is 1.000. Impedance magnitude is 0.027506 pu, impedance angle is 88.55 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 19.0 to bus 23.0.",
+    "input": "FromBus=19.0, ToBus=23.0, R (pu)=0.0001565656561217333, X (pu)=0.002173979159925275, Turn=1.0",
+    "output": "From bus 19.0 to bus 23.0 is a highly inductive line,  resistance is 0.000157 pu, reactance is 0.002174 pu, turn ratio is 1.000. Impedance magnitude is 0.002180 pu, impedance angle is 85.88 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 14.0 and 24.0?",
+    "input": "FromBus=14.0, ToBus=24.0, R (pu)=0.002183381129698852, X (pu)=0.1166931655737039, Turn=1.0",
+    "output": "From bus 14.0 to bus 24.0 is a highly inductive line,  resistance is 0.002183 pu, reactance is 0.116693 pu, turn ratio is 1.000. Impedance magnitude is 0.116714 pu, impedance angle is 88.93 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=21.0, ToBus=25.0, R (pu)=0.006874197729489373, X (pu)=0.01073613966424705, Turn=1.0",
+    "output": "From bus 21.0 to bus 25.0 is a normal resistive-inductive line,  resistance is 0.006874 pu, reactance is 0.010736 pu, turn ratio is 1.000. Impedance magnitude is 0.012748 pu, impedance angle is 57.37 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 19.0 and 27.0?",
+    "input": "FromBus=19.0, ToBus=27.0, R (pu)=0.000144655153611096, X (pu)=0.03822572097431826, Turn=1.0",
+    "output": "From bus 19.0 to bus 27.0 is a highly inductive line,  resistance is 0.000145 pu, reactance is 0.038226 pu, turn ratio is 1.000. Impedance magnitude is 0.038226 pu, impedance angle is 89.78 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=20.0, ToBus=29.0, R (pu)=0.01158946894025929, X (pu)=0.003642450648386779, Turn=1.0",
+    "output": "From bus 20.0 to bus 29.0 is a normal resistive-inductive line,  resistance is 0.011589 pu, reactance is 0.003642 pu, turn ratio is 1.000. Impedance magnitude is 0.012148 pu, impedance angle is 17.45 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 21.0 and 30.0?",
+    "input": "FromBus=21.0, ToBus=30.0, R (pu)=0.004501314329377047, X (pu)=0.09785248689478301, Turn=1.0",
+    "output": "From bus 21.0 to bus 30.0 is a highly inductive line,  resistance is 0.004501 pu, reactance is 0.097852 pu, turn ratio is 1.000. Impedance magnitude is 0.097956 pu, impedance angle is 87.37 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 21.0 and 31.0?",
+    "input": "FromBus=21.0, ToBus=31.0, R (pu)=0.000527616912006571, X (pu)=0.02466849540552602, Turn=1.0",
+    "output": "From bus 21.0 to bus 31.0 is a highly inductive line,  resistance is 0.000528 pu, reactance is 0.024668 pu, turn ratio is 1.000. Impedance magnitude is 0.024674 pu, impedance angle is 88.77 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 35.0 and 37.0?",
+    "input": "FromBus=35.0, ToBus=37.0, R (pu)=0.005265991849784169, X (pu)=0.1719368911380937, Turn=1.0",
+    "output": "From bus 35.0 to bus 37.0 is a highly inductive line,  resistance is 0.005266 pu, reactance is 0.171937 pu, turn ratio is 1.000. Impedance magnitude is 0.172018 pu, impedance angle is 88.25 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 39.0 and 42.0?",
+    "input": "FromBus=39.0, ToBus=42.0, R (pu)=0.005007791731747344, X (pu)=0.05984380849183205, Turn=1.0",
+    "output": "From bus 39.0 to bus 42.0 is a highly inductive line,  resistance is 0.005008 pu, reactance is 0.059844 pu, turn ratio is 1.000. Impedance magnitude is 0.060053 pu, impedance angle is 85.22 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 33.0 to bus 43.0.",
+    "input": "FromBus=33.0, ToBus=43.0, R (pu)=0.0009748471904730674, X (pu)=5.002759271996008e-05, Turn=1.0",
+    "output": "From bus 33.0 to bus 43.0 is a highly resistive line,  resistance is 0.000975 pu, reactance is 0.000050 pu, turn ratio is 1.000. Impedance magnitude is 0.000976 pu, impedance angle is 2.94 degrees. This line has significant impact on active power transmission."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 38.0 and 44.0?",
+    "input": "FromBus=38.0, ToBus=44.0, R (pu)=0.0487070014444123, X (pu)=0.5938639334494908, Turn=1.0",
+    "output": "From bus 38.0 to bus 44.0 is a highly inductive line,  resistance is 0.048707 pu, reactance is 0.593864 pu, turn ratio is 1.000. Impedance magnitude is 0.595858 pu, impedance angle is 85.31 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 5.0-45.0.",
+    "input": "FromBus=5.0, ToBus=45.0, R (pu)=0.01535958694193701, X (pu)=0.02265325943779715, Turn=1.0",
+    "output": "From bus 5.0 to bus 45.0 is a normal resistive-inductive line,  resistance is 0.015360 pu, reactance is 0.022653 pu, turn ratio is 1.000. Impedance magnitude is 0.027369 pu, impedance angle is 55.86 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 6.0 and 46.0?",
+    "input": "FromBus=6.0, ToBus=46.0, R (pu)=0.007798240281416838, X (pu)=0.01080902931272344, Turn=1.0",
+    "output": "From bus 6.0 to bus 46.0 is a normal resistive-inductive line,  resistance is 0.007798 pu, reactance is 0.010809 pu, turn ratio is 1.000. Impedance magnitude is 0.013328 pu, impedance angle is 54.19 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 42.0 to bus 46.0.",
+    "input": "FromBus=42.0, ToBus=46.0, R (pu)=0.002177407309284385, X (pu)=0.001182208474610316, Turn=1.0",
+    "output": "From bus 42.0 to bus 46.0 is a normal resistive-inductive line,  resistance is 0.002177 pu, reactance is 0.001182 pu, turn ratio is 1.000. Impedance magnitude is 0.002478 pu, impedance angle is 28.50 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 45.0-46.0.",
+    "input": "FromBus=45.0, ToBus=46.0, R (pu)=0.02543730822375912, X (pu)=0.7380360354229166, Turn=1.0",
+    "output": "From bus 45.0 to bus 46.0 is a highly inductive line,  resistance is 0.025437 pu, reactance is 0.738036 pu, turn ratio is 1.000. Impedance magnitude is 0.738474 pu, impedance angle is 88.03 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 58.0-65.0.",
+    "input": "FromBus=58.0, ToBus=65.0, R (pu)=9.856673674916301e-05, X (pu)=0.002151898168136082, Turn=1.0",
+    "output": "From bus 58.0 to bus 65.0 is a highly inductive line,  resistance is 0.000099 pu, reactance is 0.002152 pu, turn ratio is 1.000. Impedance magnitude is 0.002154 pu, impedance angle is 87.38 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 60.0 to bus 66.0.",
+    "input": "FromBus=60.0, ToBus=66.0, R (pu)=0.0008999583123353394, X (pu)=0.004264819485028088, Turn=1.0",
+    "output": "From bus 60.0 to bus 66.0 is a normal resistive-inductive line,  resistance is 0.000900 pu, reactance is 0.004265 pu, turn ratio is 1.000. Impedance magnitude is 0.004359 pu, impedance angle is 78.08 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=62.0, ToBus=66.0, R (pu)=0.08389113886930091, X (pu)=0.2233293143701178, Turn=1.0",
+    "output": "From bus 62.0 to bus 66.0 is a normal resistive-inductive line,  resistance is 0.083891 pu, reactance is 0.223329 pu, turn ratio is 1.000. Impedance magnitude is 0.238566 pu, impedance angle is 69.41 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 63.0 and 67.0?",
+    "input": "FromBus=63.0, ToBus=67.0, R (pu)=0.1286462579362088, X (pu)=0.4605308692149988, Turn=1.0",
+    "output": "From bus 63.0 to bus 67.0 is a normal resistive-inductive line,  resistance is 0.128646 pu, reactance is 0.460531 pu, turn ratio is 1.000. Impedance magnitude is 0.478162 pu, impedance angle is 74.39 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 56.0 to bus 68.0.",
+    "input": "FromBus=56.0, ToBus=68.0, R (pu)=0.01272862984968376, X (pu)=0.04861160243796082, Turn=1.0",
+    "output": "From bus 56.0 to bus 68.0 is a normal resistive-inductive line,  resistance is 0.012729 pu, reactance is 0.048612 pu, turn ratio is 1.000. Impedance magnitude is 0.050250 pu, impedance angle is 75.33 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 66.0 and 68.0?",
+    "input": "FromBus=66.0, ToBus=68.0, R (pu)=0.02214971017004305, X (pu)=0.07489665829015084, Turn=1.0",
+    "output": "From bus 66.0 to bus 68.0 is a normal resistive-inductive line,  resistance is 0.022150 pu, reactance is 0.074897 pu, turn ratio is 1.000. Impedance magnitude is 0.078103 pu, impedance angle is 73.53 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=63.0, ToBus=69.0, R (pu)=0.009396524708553467, X (pu)=0.185887874723801, Turn=1.0",
+    "output": "From bus 63.0 to bus 69.0 is a highly inductive line,  resistance is 0.009397 pu, reactance is 0.185888 pu, turn ratio is 1.000. Impedance magnitude is 0.186125 pu, impedance angle is 87.11 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 51.0 to bus 74.0.",
+    "input": "FromBus=51.0, ToBus=74.0, R (pu)=0.0003756117010667478, X (pu)=0.001291561726504911, Turn=1.0",
+    "output": "From bus 51.0 to bus 74.0 is a normal resistive-inductive line,  resistance is 0.000376 pu, reactance is 0.001292 pu, turn ratio is 1.000. Impedance magnitude is 0.001345 pu, impedance angle is 73.78 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 68.0 and 74.0?",
+    "input": "FromBus=68.0, ToBus=74.0, R (pu)=0.001468744047194114, X (pu)=0.005615502164172712, Turn=1.0",
+    "output": "From bus 68.0 to bus 74.0 is a normal resistive-inductive line,  resistance is 0.001469 pu, reactance is 0.005616 pu, turn ratio is 1.000. Impedance magnitude is 0.005804 pu, impedance angle is 75.34 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 70.0 to bus 74.0.",
+    "input": "FromBus=70.0, ToBus=74.0, R (pu)=0.00528499501622825, X (pu)=0.04276141670810375, Turn=1.0",
+    "output": "From bus 70.0 to bus 74.0 is a normal resistive-inductive line,  resistance is 0.005285 pu, reactance is 0.042761 pu, turn ratio is 1.000. Impedance magnitude is 0.043087 pu, impedance angle is 82.95 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 77.0 and 80.0?",
+    "input": "FromBus=77.0, ToBus=80.0, R (pu)=0.0009673178218692662, X (pu)=0.02063613053974577, Turn=1.0",
+    "output": "From bus 77.0 to bus 80.0 is a highly inductive line,  resistance is 0.000967 pu, reactance is 0.020636 pu, turn ratio is 1.000. Impedance magnitude is 0.020659 pu, impedance angle is 87.32 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 80.0 and 83.0?",
+    "input": "FromBus=80.0, ToBus=83.0, R (pu)=0.03553617869770913, X (pu)=0.1391062756868726, Turn=1.0",
+    "output": "From bus 80.0 to bus 83.0 is a normal resistive-inductive line,  resistance is 0.035536 pu, reactance is 0.139106 pu, turn ratio is 1.000. Impedance magnitude is 0.143574 pu, impedance angle is 75.67 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 84.0 to bus 87.0.",
+    "input": "FromBus=84.0, ToBus=87.0, R (pu)=0.002882282700092485, X (pu)=0.01057459310244814, Turn=1.0",
+    "output": "From bus 84.0 to bus 87.0 is a normal resistive-inductive line,  resistance is 0.002882 pu, reactance is 0.010575 pu, turn ratio is 1.000. Impedance magnitude is 0.010960 pu, impedance angle is 74.75 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 87.0-88.0.",
+    "input": "FromBus=87.0, ToBus=88.0, R (pu)=0.01447885727038459, X (pu)=0.03415647143146536, Turn=1.0",
+    "output": "From bus 87.0 to bus 88.0 is a normal resistive-inductive line,  resistance is 0.014479 pu, reactance is 0.034156 pu, turn ratio is 1.000. Impedance magnitude is 0.037099 pu, impedance angle is 67.03 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=86.0, ToBus=90.0, R (pu)=0.03036912501479321, X (pu)=0.2100110598639212, Turn=1.0",
+    "output": "From bus 86.0 to bus 90.0 is a normal resistive-inductive line,  resistance is 0.030369 pu, reactance is 0.210011 pu, turn ratio is 1.000. Impedance magnitude is 0.212195 pu, impedance angle is 81.77 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 89.0 to bus 93.0.",
+    "input": "FromBus=89.0, ToBus=93.0, R (pu)=0.0001103841488187673, X (pu)=0.00137401281490968, Turn=1.0",
+    "output": "From bus 89.0 to bus 93.0 is a highly inductive line,  resistance is 0.000110 pu, reactance is 0.001374 pu, turn ratio is 1.000. Impedance magnitude is 0.001378 pu, impedance angle is 85.41 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 87.0-97.0.",
+    "input": "FromBus=87.0, ToBus=97.0, R (pu)=0.01736657780219111, X (pu)=0.078069586223266, Turn=1.0",
+    "output": "From bus 87.0 to bus 97.0 is a normal resistive-inductive line,  resistance is 0.017367 pu, reactance is 0.078070 pu, turn ratio is 1.000. Impedance magnitude is 0.079978 pu, impedance angle is 77.46 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 94.0 and 98.0?",
+    "input": "FromBus=94.0, ToBus=98.0, R (pu)=0.0007886193380257634, X (pu)=0.02240224601569768, Turn=1.0",
+    "output": "From bus 94.0 to bus 98.0 is a highly inductive line,  resistance is 0.000789 pu, reactance is 0.022402 pu, turn ratio is 1.000. Impedance magnitude is 0.022416 pu, impedance angle is 87.98 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=92.0, ToBus=99.0, R (pu)=0.005657316200872554, X (pu)=0.07159047967912567, Turn=1.0",
+    "output": "From bus 92.0 to bus 99.0 is a highly inductive line,  resistance is 0.005657 pu, reactance is 0.071590 pu, turn ratio is 1.000. Impedance magnitude is 0.071814 pu, impedance angle is 85.48 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 92.0 and 101.0?",
+    "input": "FromBus=92.0, ToBus=101.0, R (pu)=0.0002098870303772663, X (pu)=0.001787620864471691, Turn=1.0",
+    "output": "From bus 92.0 to bus 101.0 is a normal resistive-inductive line,  resistance is 0.000210 pu, reactance is 0.001788 pu, turn ratio is 1.000. Impedance magnitude is 0.001800 pu, impedance angle is 83.30 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 99.0 and 102.0?",
+    "input": "FromBus=99.0, ToBus=102.0, R (pu)=0.08018214601426528, X (pu)=0.09246652770595269, Turn=1.0",
+    "output": "From bus 99.0 to bus 102.0 is a normal resistive-inductive line,  resistance is 0.080182 pu, reactance is 0.092467 pu, turn ratio is 1.000. Impedance magnitude is 0.122390 pu, impedance angle is 49.07 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 94.0 to bus 104.0.",
+    "input": "FromBus=94.0, ToBus=104.0, R (pu)=0.0128000262389082, X (pu)=0.04098366312337043, Turn=1.0",
+    "output": "From bus 94.0 to bus 104.0 is a normal resistive-inductive line,  resistance is 0.012800 pu, reactance is 0.040984 pu, turn ratio is 1.000. Impedance magnitude is 0.042936 pu, impedance angle is 72.66 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 95.0 and 104.0?",
+    "input": "FromBus=95.0, ToBus=104.0, R (pu)=0.0003361005304009778, X (pu)=0.0008548456863109796, Turn=1.0",
+    "output": "From bus 95.0 to bus 104.0 is a normal resistive-inductive line,  resistance is 0.000336 pu, reactance is 0.000855 pu, turn ratio is 1.000. Impedance magnitude is 0.000919 pu, impedance angle is 68.54 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 109.0 and 111.0?",
+    "input": "FromBus=109.0, ToBus=111.0, R (pu)=0.3564322706809983, X (pu)=0.5794215806439776, Turn=1.0",
+    "output": "From bus 109.0 to bus 111.0 is a normal resistive-inductive line,  resistance is 0.356432 pu, reactance is 0.579422 pu, turn ratio is 1.000. Impedance magnitude is 0.680274 pu, impedance angle is 58.40 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 77.0-112.0.",
+    "input": "FromBus=77.0, ToBus=112.0, R (pu)=0.02546740361125087, X (pu)=0.1033391511522842, Turn=1.0",
+    "output": "From bus 77.0 to bus 112.0 is a normal resistive-inductive line,  resistance is 0.025467 pu, reactance is 0.103339 pu, turn ratio is 1.000. Impedance magnitude is 0.106431 pu, impedance angle is 76.16 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=79.0, ToBus=114.0, R (pu)=0.001012299322200848, X (pu)=0.04456165325885376, Turn=1.0",
+    "output": "From bus 79.0 to bus 114.0 is a highly inductive line,  resistance is 0.001012 pu, reactance is 0.044562 pu, turn ratio is 1.000. Impedance magnitude is 0.044573 pu, impedance angle is 88.70 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 112.0 and 115.0?",
+    "input": "FromBus=112.0, ToBus=115.0, R (pu)=0.0001073854199302536, X (pu)=0.002347632398299774, Turn=1.0",
+    "output": "From bus 112.0 to bus 115.0 is a highly inductive line,  resistance is 0.000107 pu, reactance is 0.002348 pu, turn ratio is 1.000. Impedance magnitude is 0.002350 pu, impedance angle is 87.38 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 111.0 and 116.0?",
+    "input": "FromBus=111.0, ToBus=116.0, R (pu)=0.02542637063969934, X (pu)=0.2179863522609596, Turn=1.0",
+    "output": "From bus 111.0 to bus 116.0 is a normal resistive-inductive line,  resistance is 0.025426 pu, reactance is 0.217986 pu, turn ratio is 1.000. Impedance magnitude is 0.219464 pu, impedance angle is 83.35 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=114.0, ToBus=116.0, R (pu)=0.1721464219670336, X (pu)=0.7758567449430487, Turn=1.0",
+    "output": "From bus 114.0 to bus 116.0 is a normal resistive-inductive line,  resistance is 0.172146 pu, reactance is 0.775857 pu, turn ratio is 1.000. Impedance magnitude is 0.794725 pu, impedance angle is 77.49 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 78.0-119.0.",
+    "input": "FromBus=78.0, ToBus=119.0, R (pu)=0.002448865331859265, X (pu)=0.00989792865032597, Turn=1.0",
+    "output": "From bus 78.0 to bus 119.0 is a normal resistive-inductive line,  resistance is 0.002449 pu, reactance is 0.009898 pu, turn ratio is 1.000. Impedance magnitude is 0.010196 pu, impedance angle is 76.10 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 113.0 to bus 121.0.",
+    "input": "FromBus=113.0, ToBus=121.0, R (pu)=0.0001851427847386248, X (pu)=0.07617497194311496, Turn=1.0",
+    "output": "From bus 113.0 to bus 121.0 is a highly inductive line,  resistance is 0.000185 pu, reactance is 0.076175 pu, turn ratio is 1.000. Impedance magnitude is 0.076175 pu, impedance angle is 89.86 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=120.0, ToBus=121.0, R (pu)=0.00264752512603074, X (pu)=0.05374478612766984, Turn=1.0",
+    "output": "From bus 120.0 to bus 121.0 is a highly inductive line,  resistance is 0.002648 pu, reactance is 0.053745 pu, turn ratio is 1.000. Impedance magnitude is 0.053810 pu, impedance angle is 87.18 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 116.0 to bus 125.0.",
+    "input": "FromBus=116.0, ToBus=125.0, R (pu)=0.001859106906338726, X (pu)=0.09545135299026276, Turn=1.0",
+    "output": "From bus 116.0 to bus 125.0 is a highly inductive line,  resistance is 0.001859 pu, reactance is 0.095451 pu, turn ratio is 1.000. Impedance magnitude is 0.095469 pu, impedance angle is 88.88 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 78.0 and 126.0?",
+    "input": "FromBus=78.0, ToBus=126.0, R (pu)=0.0115892876995201, X (pu)=0.006356017823408068, Turn=1.0",
+    "output": "From bus 78.0 to bus 126.0 is a normal resistive-inductive line,  resistance is 0.011589 pu, reactance is 0.006356 pu, turn ratio is 1.000. Impedance magnitude is 0.013218 pu, impedance angle is 28.74 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=128.0, ToBus=129.0, R (pu)=0.0007785091751932918, X (pu)=0.002230443181875238, Turn=1.0",
+    "output": "From bus 128.0 to bus 129.0 is a normal resistive-inductive line,  resistance is 0.000779 pu, reactance is 0.002230 pu, turn ratio is 1.000. Impedance magnitude is 0.002362 pu, impedance angle is 70.76 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=131.0, ToBus=135.0, R (pu)=0.002635898587245273, X (pu)=0.008625705527117871, Turn=1.0",
+    "output": "From bus 131.0 to bus 135.0 is a normal resistive-inductive line,  resistance is 0.002636 pu, reactance is 0.008626 pu, turn ratio is 1.000. Impedance magnitude is 0.009019 pu, impedance angle is 73.01 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=134.0, ToBus=144.0, R (pu)=0.001064185588376022, X (pu)=0.006170970816774647, Turn=1.0",
+    "output": "From bus 134.0 to bus 144.0 is a normal resistive-inductive line,  resistance is 0.001064 pu, reactance is 0.006171 pu, turn ratio is 1.000. Impedance magnitude is 0.006262 pu, impedance angle is 80.22 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=142.0, ToBus=144.0, R (pu)=0.02214971017004305, X (pu)=0.07489665829015084, Turn=1.0",
+    "output": "From bus 142.0 to bus 144.0 is a normal resistive-inductive line,  resistance is 0.022150 pu, reactance is 0.074897 pu, turn ratio is 1.000. Impedance magnitude is 0.078103 pu, impedance angle is 73.53 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=143.0, ToBus=147.0, R (pu)=0.01768918080668492, X (pu)=0.1381775438031938, Turn=1.0",
+    "output": "From bus 143.0 to bus 147.0 is a normal resistive-inductive line,  resistance is 0.017689 pu, reactance is 0.138178 pu, turn ratio is 1.000. Impedance magnitude is 0.139305 pu, impedance angle is 82.70 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 140.0 to bus 150.0.",
+    "input": "FromBus=140.0, ToBus=150.0, R (pu)=0.0002360001047864735, X (pu)=0.00439503815471691, Turn=1.0",
+    "output": "From bus 140.0 to bus 150.0 is a highly inductive line,  resistance is 0.000236 pu, reactance is 0.004395 pu, turn ratio is 1.000. Impedance magnitude is 0.004401 pu, impedance angle is 86.93 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 144.0 and 150.0?",
+    "input": "FromBus=144.0, ToBus=150.0, R (pu)=0.001468744047194114, X (pu)=0.005615502164172712, Turn=1.0",
+    "output": "From bus 144.0 to bus 150.0 is a normal resistive-inductive line,  resistance is 0.001469 pu, reactance is 0.005616 pu, turn ratio is 1.000. Impedance magnitude is 0.005804 pu, impedance angle is 75.34 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 148.0-150.0.",
+    "input": "FromBus=148.0, ToBus=150.0, R (pu)=0.005713974714817662, X (pu)=0.005747308070087531, Turn=1.0",
+    "output": "From bus 148.0 to bus 150.0 is a normal resistive-inductive line,  resistance is 0.005714 pu, reactance is 0.005747 pu, turn ratio is 1.000. Impedance magnitude is 0.008104 pu, impedance angle is 45.17 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 152.0 to bus 154.0.",
+    "input": "FromBus=152.0, ToBus=154.0, R (pu)=0.04916314963683558, X (pu)=0.1832987308031444, Turn=1.0",
+    "output": "From bus 152.0 to bus 154.0 is a normal resistive-inductive line,  resistance is 0.049163 pu, reactance is 0.183299 pu, turn ratio is 1.000. Impedance magnitude is 0.189777 pu, impedance angle is 74.99 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=153.0, ToBus=157.0, R (pu)=0.000886870999022876, X (pu)=0.003839044868989697, Turn=1.0",
+    "output": "From bus 153.0 to bus 157.0 is a normal resistive-inductive line,  resistance is 0.000887 pu, reactance is 0.003839 pu, turn ratio is 1.000. Impedance magnitude is 0.003940 pu, impedance angle is 76.99 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 156.0-158.0.",
+    "input": "FromBus=156.0, ToBus=158.0, R (pu)=0.02428663504622182, X (pu)=0.0723336769518318, Turn=1.0",
+    "output": "From bus 156.0 to bus 158.0 is a normal resistive-inductive line,  resistance is 0.024287 pu, reactance is 0.072334 pu, turn ratio is 1.000. Impedance magnitude is 0.076302 pu, impedance angle is 71.44 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 156.0-160.0.",
+    "input": "FromBus=156.0, ToBus=160.0, R (pu)=0.01818947337519252, X (pu)=0.1784677292312258, Turn=1.0",
+    "output": "From bus 156.0 to bus 160.0 is a normal resistive-inductive line,  resistance is 0.018189 pu, reactance is 0.178468 pu, turn ratio is 1.000. Impedance magnitude is 0.179392 pu, impedance angle is 84.18 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=156.0, ToBus=163.0, R (pu)=0.0004231312188569957, X (pu)=0.2284048636722513, Turn=1.0",
+    "output": "From bus 156.0 to bus 163.0 is a highly inductive line,  resistance is 0.000423 pu, reactance is 0.228405 pu, turn ratio is 1.000. Impedance magnitude is 0.228405 pu, impedance angle is 89.89 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 162.0 to bus 163.0.",
+    "input": "FromBus=162.0, ToBus=163.0, R (pu)=0.03475651197903591, X (pu)=0.1172504998243091, Turn=1.0",
+    "output": "From bus 162.0 to bus 163.0 is a normal resistive-inductive line,  resistance is 0.034757 pu, reactance is 0.117250 pu, turn ratio is 1.000. Impedance magnitude is 0.122293 pu, impedance angle is 73.49 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 155.0 and 164.0?",
+    "input": "FromBus=155.0, ToBus=164.0, R (pu)=0.004482053168422835, X (pu)=0.03183254141097365, Turn=1.0",
+    "output": "From bus 155.0 to bus 164.0 is a normal resistive-inductive line,  resistance is 0.004482 pu, reactance is 0.031833 pu, turn ratio is 1.000. Impedance magnitude is 0.032147 pu, impedance angle is 81.99 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 164.0 and 165.0?",
+    "input": "FromBus=164.0, ToBus=165.0, R (pu)=0.0004118549317501396, X (pu)=0.0212781401792964, Turn=1.0",
+    "output": "From bus 164.0 to bus 165.0 is a highly inductive line,  resistance is 0.000412 pu, reactance is 0.021278 pu, turn ratio is 1.000. Impedance magnitude is 0.021282 pu, impedance angle is 88.89 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 160.0-167.0.",
+    "input": "FromBus=160.0, ToBus=167.0, R (pu)=0.1391741501440688, X (pu)=0.112908386820494, Turn=1.0",
+    "output": "From bus 160.0 to bus 167.0 is a normal resistive-inductive line,  resistance is 0.139174 pu, reactance is 0.112908 pu, turn ratio is 1.000. Impedance magnitude is 0.179214 pu, impedance angle is 39.05 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 168.0-171.0.",
+    "input": "FromBus=168.0, ToBus=171.0, R (pu)=0.00631659525465622, X (pu)=0.02496217241418753, Turn=1.0",
+    "output": "From bus 168.0 to bus 171.0 is a normal resistive-inductive line,  resistance is 0.006317 pu, reactance is 0.024962 pu, turn ratio is 1.000. Impedance magnitude is 0.025749 pu, impedance angle is 75.80 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=169.0, ToBus=171.0, R (pu)=0.0001574941694633256, X (pu)=0.0003003980451164615, Turn=1.0",
+    "output": "From bus 169.0 to bus 171.0 is a normal resistive-inductive line,  resistance is 0.000157 pu, reactance is 0.000300 pu, turn ratio is 1.000. Impedance magnitude is 0.000339 pu, impedance angle is 62.33 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=170.0, ToBus=172.0, R (pu)=0.0007850716161307743, X (pu)=2.645099351281865e-05, Turn=1.0",
+    "output": "From bus 170.0 to bus 172.0 is a highly resistive line,  resistance is 0.000785 pu, reactance is 0.000026 pu, turn ratio is 1.000. Impedance magnitude is 0.000786 pu, impedance angle is 1.93 degrees. This line has significant impact on active power transmission."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=168.0, ToBus=174.0, R (pu)=0.0003690422150951773, X (pu)=0.007362067754484235, Turn=1.0",
+    "output": "From bus 168.0 to bus 174.0 is a highly inductive line,  resistance is 0.000369 pu, reactance is 0.007362 pu, turn ratio is 1.000. Impedance magnitude is 0.007371 pu, impedance angle is 87.13 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=170.0, ToBus=174.0, R (pu)=0.01088824564975618, X (pu)=0.07505289217484595, Turn=1.0",
+    "output": "From bus 170.0 to bus 174.0 is a normal resistive-inductive line,  resistance is 0.010888 pu, reactance is 0.075053 pu, turn ratio is 1.000. Impedance magnitude is 0.075839 pu, impedance angle is 81.75 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 169.0 to bus 177.0.",
+    "input": "FromBus=169.0, ToBus=177.0, R (pu)=0.1121071726060786, X (pu)=0.2115176559649958, Turn=1.0",
+    "output": "From bus 169.0 to bus 177.0 is a normal resistive-inductive line,  resistance is 0.112107 pu, reactance is 0.211518 pu, turn ratio is 1.000. Impedance magnitude is 0.239390 pu, impedance angle is 62.08 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=175.0, ToBus=179.0, R (pu)=0.001925413135703833, X (pu)=0.02597181006705097, Turn=1.0",
+    "output": "From bus 175.0 to bus 179.0 is a highly inductive line,  resistance is 0.001925 pu, reactance is 0.025972 pu, turn ratio is 1.000. Impedance magnitude is 0.026043 pu, impedance angle is 85.76 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 172.0 and 180.0?",
+    "input": "FromBus=172.0, ToBus=180.0, R (pu)=0.04104067445933011, X (pu)=0.01284503500049963, Turn=1.0",
+    "output": "From bus 172.0 to bus 180.0 is a normal resistive-inductive line,  resistance is 0.041041 pu, reactance is 0.012845 pu, turn ratio is 1.000. Impedance magnitude is 0.043004 pu, impedance angle is 17.38 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=176.0, ToBus=183.0, R (pu)=0.003618030775330302, X (pu)=0.02205293712668927, Turn=1.0",
+    "output": "From bus 176.0 to bus 183.0 is a normal resistive-inductive line,  resistance is 0.003618 pu, reactance is 0.022053 pu, turn ratio is 1.000. Impedance magnitude is 0.022348 pu, impedance angle is 80.68 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=176.0, ToBus=184.0, R (pu)=0.002110727984676874, X (pu)=0.0150642194995207, Turn=1.0",
+    "output": "From bus 176.0 to bus 184.0 is a normal resistive-inductive line,  resistance is 0.002111 pu, reactance is 0.015064 pu, turn ratio is 1.000. Impedance magnitude is 0.015211 pu, impedance angle is 82.02 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=179.0, ToBus=188.0, R (pu)=0.0001955966594959564, X (pu)=0.01090533197875318, Turn=1.0",
+    "output": "From bus 179.0 to bus 188.0 is a highly inductive line,  resistance is 0.000196 pu, reactance is 0.010905 pu, turn ratio is 1.000. Impedance magnitude is 0.010907 pu, impedance angle is 88.97 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=187.0, ToBus=189.0, R (pu)=0.00514278850325446, X (pu)=0.09896402892347028, Turn=1.0",
+    "output": "From bus 187.0 to bus 189.0 is a highly inductive line,  resistance is 0.005143 pu, reactance is 0.098964 pu, turn ratio is 1.000. Impedance magnitude is 0.099098 pu, impedance angle is 87.03 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 184.0-190.0.",
+    "input": "FromBus=184.0, ToBus=190.0, R (pu)=0.02360976104071648, X (pu)=0.2240610219510676, Turn=1.0",
+    "output": "From bus 184.0 to bus 190.0 is a normal resistive-inductive line,  resistance is 0.023610 pu, reactance is 0.224061 pu, turn ratio is 1.000. Impedance magnitude is 0.225301 pu, impedance angle is 83.98 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=186.0, ToBus=190.0, R (pu)=0.008244908106383874, X (pu)=0.04739932271318786, Turn=1.0",
+    "output": "From bus 186.0 to bus 190.0 is a normal resistive-inductive line,  resistance is 0.008245 pu, reactance is 0.047399 pu, turn ratio is 1.000. Impedance magnitude is 0.048111 pu, impedance angle is 80.13 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 188.0 and 190.0?",
+    "input": "FromBus=188.0, ToBus=190.0, R (pu)=4.596848529421835e-06, X (pu)=0.0004160845231808342, Turn=1.0",
+    "output": "From bus 188.0 to bus 190.0 is a highly inductive line,  resistance is 0.000005 pu, reactance is 0.000416 pu, turn ratio is 1.000. Impedance magnitude is 0.000416 pu, impedance angle is 89.37 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=184.0, ToBus=191.0, R (pu)=0.05098853930028342, X (pu)=1.207676124471359, Turn=1.0",
+    "output": "From bus 184.0 to bus 191.0 is a highly inductive line,  resistance is 0.050989 pu, reactance is 1.207676 pu, turn ratio is 1.000. Impedance magnitude is 1.208752 pu, impedance angle is 87.58 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 186.0 and 192.0?",
+    "input": "FromBus=186.0, ToBus=192.0, R (pu)=0.0383144846037585, X (pu)=0.1248919008193618, Turn=1.0",
+    "output": "From bus 186.0 to bus 192.0 is a normal resistive-inductive line,  resistance is 0.038314 pu, reactance is 0.124892 pu, turn ratio is 1.000. Impedance magnitude is 0.130637 pu, impedance angle is 72.94 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 192.0 and 193.0?",
+    "input": "FromBus=192.0, ToBus=193.0, R (pu)=0.005366584123071545, X (pu)=0.003297461683262113, Turn=1.0",
+    "output": "From bus 192.0 to bus 193.0 is a normal resistive-inductive line,  resistance is 0.005367 pu, reactance is 0.003297 pu, turn ratio is 1.000. Impedance magnitude is 0.006299 pu, impedance angle is 31.57 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 155.0 and 195.0?",
+    "input": "FromBus=155.0, ToBus=195.0, R (pu)=0.04740643521097399, X (pu)=0.1734962888460368, Turn=1.0",
+    "output": "From bus 155.0 to bus 195.0 is a normal resistive-inductive line,  resistance is 0.047406 pu, reactance is 0.173496 pu, turn ratio is 1.000. Impedance magnitude is 0.179856 pu, impedance angle is 74.72 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 157.0 to bus 196.0.",
+    "input": "FromBus=157.0, ToBus=196.0, R (pu)=0.009867452961172102, X (pu)=0.01198198401039466, Turn=1.0",
+    "output": "From bus 157.0 to bus 196.0 is a normal resistive-inductive line,  resistance is 0.009867 pu, reactance is 0.011982 pu, turn ratio is 1.000. Impedance magnitude is 0.015522 pu, impedance angle is 50.53 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=199.0, ToBus=201.0, R (pu)=1.982321419176317e-05, X (pu)=0.002266531156919676, Turn=1.0",
+    "output": "From bus 199.0 to bus 201.0 is a highly inductive line,  resistance is 0.000020 pu, reactance is 0.002267 pu, turn ratio is 1.000. Impedance magnitude is 0.002267 pu, impedance angle is 89.50 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 202.0-203.0.",
+    "input": "FromBus=202.0, ToBus=203.0, R (pu)=9.405461798336459e-05, X (pu)=0.004976768590611327, Turn=1.0",
+    "output": "From bus 202.0 to bus 203.0 is a highly inductive line,  resistance is 0.000094 pu, reactance is 0.004977 pu, turn ratio is 1.000. Impedance magnitude is 0.004978 pu, impedance angle is 88.92 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 207.0 to bus 209.0.",
+    "input": "FromBus=207.0, ToBus=209.0, R (pu)=0.001556030869050267, X (pu)=0.02917574464060875, Turn=1.0",
+    "output": "From bus 207.0 to bus 209.0 is a highly inductive line,  resistance is 0.001556 pu, reactance is 0.029176 pu, turn ratio is 1.000. Impedance magnitude is 0.029217 pu, impedance angle is 86.95 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 204.0 to bus 210.0.",
+    "input": "FromBus=204.0, ToBus=210.0, R (pu)=0.002628494563464671, X (pu)=0.03952916697165415, Turn=1.0",
+    "output": "From bus 204.0 to bus 210.0 is a highly inductive line,  resistance is 0.002628 pu, reactance is 0.039529 pu, turn ratio is 1.000. Impedance magnitude is 0.039616 pu, impedance angle is 86.20 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=205.0, ToBus=210.0, R (pu)=0.006589375726089252, X (pu)=0.008309222027973863, Turn=1.0",
+    "output": "From bus 205.0 to bus 210.0 is a normal resistive-inductive line,  resistance is 0.006589 pu, reactance is 0.008309 pu, turn ratio is 1.000. Impedance magnitude is 0.010605 pu, impedance angle is 51.58 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 202.0-212.0.",
+    "input": "FromBus=202.0, ToBus=212.0, R (pu)=0.0145791233733318, X (pu)=0.1190896137606583, Turn=1.0",
+    "output": "From bus 202.0 to bus 212.0 is a normal resistive-inductive line,  resistance is 0.014579 pu, reactance is 0.119090 pu, turn ratio is 1.000. Impedance magnitude is 0.119979 pu, impedance angle is 83.02 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=204.0, ToBus=212.0, R (pu)=0.001170324304884575, X (pu)=0.05051134330739728, Turn=1.0",
+    "output": "From bus 204.0 to bus 212.0 is a highly inductive line,  resistance is 0.001170 pu, reactance is 0.050511 pu, turn ratio is 1.000. Impedance magnitude is 0.050525 pu, impedance angle is 88.67 degrees. This line has significant impact on reactive power transmission."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=214.0, ToBus=216.0, R (pu)=0.05226316781344068, X (pu)=0.09357713353691079, Turn=1.0",
+    "output": "From bus 214.0 to bus 216.0 is a normal resistive-inductive line,  resistance is 0.052263 pu, reactance is 0.093577 pu, turn ratio is 1.000. Impedance magnitude is 0.107183 pu, impedance angle is 60.82 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=197.0, ToBus=217.0, R (pu)=0.002321108336925957, X (pu)=0.003212976989247636, Turn=1.0",
+    "output": "From bus 197.0 to bus 217.0 is a normal resistive-inductive line,  resistance is 0.002321 pu, reactance is 0.003213 pu, turn ratio is 1.000. Impedance magnitude is 0.003964 pu, impedance angle is 54.16 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 213.0 to bus 219.0.",
+    "input": "FromBus=213.0, ToBus=219.0, R (pu)=0.01075678935858113, X (pu)=0.03424167349590269, Turn=1.0",
+    "output": "From bus 213.0 to bus 219.0 is a normal resistive-inductive line,  resistance is 0.010757 pu, reactance is 0.034242 pu, turn ratio is 1.000. Impedance magnitude is 0.035892 pu, impedance angle is 72.56 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 214.0 and 219.0?",
+    "input": "FromBus=214.0, ToBus=219.0, R (pu)=0.004179124664178679, X (pu)=0.02512678862770545, Turn=1.0",
+    "output": "From bus 214.0 to bus 219.0 is a normal resistive-inductive line,  resistance is 0.004179 pu, reactance is 0.025127 pu, turn ratio is 1.000. Impedance magnitude is 0.025472 pu, impedance angle is 80.56 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 216.0 to bus 220.0.",
+    "input": "FromBus=216.0, ToBus=220.0, R (pu)=0.01552521005317075, X (pu)=0.05912561589876341, Turn=1.0",
+    "output": "From bus 216.0 to bus 220.0 is a normal resistive-inductive line,  resistance is 0.015525 pu, reactance is 0.059126 pu, turn ratio is 1.000. Impedance magnitude is 0.061130 pu, impedance angle is 75.29 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 224.0-225.0.",
+    "input": "FromBus=224.0, ToBus=225.0, R (pu)=0.0128261029919797, X (pu)=0.08773943801727017, Turn=1.0",
+    "output": "From bus 224.0 to bus 225.0 is a normal resistive-inductive line,  resistance is 0.012826 pu, reactance is 0.087739 pu, turn ratio is 1.000. Impedance magnitude is 0.088672 pu, impedance angle is 81.68 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 202.0 and 226.0?",
+    "input": "FromBus=202.0, ToBus=226.0, R (pu)=0.007107202681148395, X (pu)=0.03913934920134679, Turn=1.0",
+    "output": "From bus 202.0 to bus 226.0 is a normal resistive-inductive line,  resistance is 0.007107 pu, reactance is 0.039139 pu, turn ratio is 1.000. Impedance magnitude is 0.039779 pu, impedance angle is 79.71 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 206.0-226.0.",
+    "input": "FromBus=206.0, ToBus=226.0, R (pu)=0.0451520006218182, X (pu)=0.1417264047133416, Turn=1.0",
+    "output": "From bus 206.0 to bus 226.0 is a normal resistive-inductive line,  resistance is 0.045152 pu, reactance is 0.141726 pu, turn ratio is 1.000. Impedance magnitude is 0.148745 pu, impedance angle is 72.33 degrees. This line affects both active and reactive power."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 19.0 to bus 68.0.",
+    "input": "FromBus=19.0, ToBus=68.0, R (pu)=0.1, X (pu)=7.5, Turn=1.0",
+    "output": "From bus 19.0 to bus 68.0 is a interconnecting line (IC connection),  resistance is 0.100000 pu, reactance is 7.500000 pu, turn ratio is 1.000. Impedance magnitude is 7.500667 pu, impedance angle is 89.24 degrees. This line used to connect AC/DC systems in different areas."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 6.0-70.0.",
+    "input": "FromBus=6.0, ToBus=70.0, R (pu)=0.1, X (pu)=7.5, Turn=1.0",
+    "output": "From bus 6.0 to bus 70.0 is a interconnecting line (IC connection),  resistance is 0.100000 pu, reactance is 7.500000 pu, turn ratio is 1.000. Impedance magnitude is 7.500667 pu, impedance angle is 89.24 degrees. This line used to connect AC/DC systems in different areas."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=66.0, ToBus=99.0, R (pu)=0.1, X (pu)=7.5, Turn=1.0",
+    "output": "From bus 66.0 to bus 99.0 is a interconnecting line (IC connection),  resistance is 0.100000 pu, reactance is 7.500000 pu, turn ratio is 1.000. Impedance magnitude is 7.500667 pu, impedance angle is 89.24 degrees. This line used to connect AC/DC systems in different areas."
+  },
+  {
+    "instruction": "Describe the impedance parameters of line 94.0-127.0.",
+    "input": "FromBus=94.0, ToBus=127.0, R (pu)=0.1, X (pu)=7.5, Turn=1.0",
+    "output": "From bus 94.0 to bus 127.0 is a interconnecting line (IC connection),  resistance is 0.100000 pu, reactance is 7.500000 pu, turn ratio is 1.000. Impedance magnitude is 7.500667 pu, impedance angle is 89.24 degrees. This line used to connect AC/DC systems in different areas."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 25.0 to bus 146.0.",
+    "input": "FromBus=25.0, ToBus=146.0, R (pu)=0.1, X (pu)=7.5, Turn=1.0",
+    "output": "From bus 25.0 to bus 146.0 is a interconnecting line (IC connection),  resistance is 0.100000 pu, reactance is 7.500000 pu, turn ratio is 1.000. Impedance magnitude is 7.500667 pu, impedance angle is 89.24 degrees. This line used to connect AC/DC systems in different areas."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 11.0 and 202.0?",
+    "input": "FromBus=11.0, ToBus=202.0, R (pu)=0.1, X (pu)=7.5, Turn=1.0",
+    "output": "From bus 11.0 to bus 202.0 is a interconnecting line (IC connection),  resistance is 0.100000 pu, reactance is 7.500000 pu, turn ratio is 1.000. Impedance magnitude is 7.500667 pu, impedance angle is 89.24 degrees. This line used to connect AC/DC systems in different areas."
+  },
+  {
+    "instruction": "Please analyze the line parameters from bus 3.0 to bus 208.0.",
+    "input": "FromBus=3.0, ToBus=208.0, R (pu)=0.1, X (pu)=7.5, Turn=1.0",
+    "output": "From bus 3.0 to bus 208.0 is a interconnecting line (IC connection),  resistance is 0.100000 pu, reactance is 7.500000 pu, turn ratio is 1.000. Impedance magnitude is 7.500667 pu, impedance angle is 89.24 degrees. This line used to connect AC/DC systems in different areas."
+  },
+  {
+    "instruction": "Explain the resistance and reactance values of this line.",
+    "input": "FromBus=28.0, ToBus=218.0, R (pu)=0.1, X (pu)=7.5, Turn=1.0",
+    "output": "From bus 28.0 to bus 218.0 is a interconnecting line (IC connection),  resistance is 0.100000 pu, reactance is 7.500000 pu, turn ratio is 1.000. Impedance magnitude is 7.500667 pu, impedance angle is 89.24 degrees. This line used to connect AC/DC systems in different areas."
+  },
+  {
+    "instruction": "What are the characteristics of this transmission line connecting bus 46.0 and 204.0?",
+    "input": "FromBus=46.0, ToBus=204.0, R (pu)=0.1, X (pu)=7.5, Turn=1.0",
+    "output": "From bus 46.0 to bus 204.0 is a interconnecting line (IC connection),  resistance is 0.100000 pu, reactance is 7.500000 pu, turn ratio is 1.000. Impedance magnitude is 7.500667 pu, impedance angle is 89.24 degrees. This line used to connect AC/DC systems in different areas."
+  }
+]
