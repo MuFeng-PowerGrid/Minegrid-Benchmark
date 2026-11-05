@@ -1,0 +1,1382 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "sc": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "dct": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "annotation": "cr:annotation",
+    "arrayShape": "cr:arrayShape",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "containedIn": "cr:containedIn",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "equivalentProperty": "cr:equivalentProperty",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "excludes": "cr:excludes",
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isArray": "cr:isArray",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "readLines": "cr:readLines",
+    "sdVersion": "cr:sdVersion",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "unArchive": "cr:unArchive",
+    "value": "https://schema.org/value",
+    "repeated": "cr:repeated",
+    "samplingRate": "cr:samplingRate",
+    "path": "cr:path",
+    "replace": "cr:replace"
+  },
+  "@type": "sc:Dataset",
+  "@id": "minegrid-multimodal",
+  "name": "MINEGRID Multimodal Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "description": "MINEGRID local package: 1429 image-paired benchmark records in 89 JSONL batches (device control: easy 76, medium 593, hard 366; network topology: easy 38, medium 222, hard 134). JSON Index/ contains the benchmark annotations and six indexes. Multimodal/ contains the 1429 referenced JPEG/PNG images and the separate Alpaca Data/ collection. Multimodal/Alpaca Data/Apparatus/ provides 16 HTML model-reference pages covering 14 device families and 46 configurations; Network/ has 32000 JSON files with 335517 instruction records; General Knowledge/ retains one JSON example with 39 records. Resources are retrieved from the main branch of the public GitHub repository. File sets are resolved relative to the repository root. The repository is a live source; individual FileObject checksums describe this metadata snapshot.",
+  "version": "2026.11.5",
+  "datePublished": "2026-05-07",
+  "url": "https://github.com/MuFeng-PowerGrid/Minegrid-Benchmark",
+  "isAccessibleForFree": true,
+  "keywords": [
+    "power systems",
+    "multimodal",
+    "vision-language",
+    "benchmark",
+    "control",
+    "topology",
+    "dynamic modeling",
+    "grid-forming",
+    "grid-following",
+    "multilingual prompts"
+  ],
+  "citeAs": "D. Guo, S. Li, X. Shi, S. Jiang, G. Konstantinou and Y. Cao, \"A Large Language Model-Based Framework for Automated Dynamic Simulation of Power Systems,\" IEEE Transactions on Smart Grid, doi: 10.1109/TSG.2026.3731592.",
+  "creator": {
+    "@type": "Organization",
+    "name": "MINEGRID"
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "rai:hasSyntheticData": true,
+  "rai:dataCollectionRawData": "Curated control diagrams and power-network schematics, including figures from technical publications, paired with structured benchmark annotations. Typical-apparatus HTML references and supplementary instruction arrays are separate resources. A complete per-image source/permission manifest is not included in this package.",
+  "rai:dataLimitations": "Difficulty levels describe task complexity, not train/validation/test splits. Shared papers and system families require grouping for independent evaluation. Some network electrical quantities are estimated benchmark assignments rather than source operating points. The original license declaration is retained; it does not establish permissions for each third-party figure. Model descriptions require implementation and independent validation for simulation use.",
+  "rai:dataBiases": "Selection favors legible engineering schematics and control diagrams suitable for structured annotation. Styles, device classes and network families may be unevenly represented. The original human prompts are Chinese; annotations supplies five translated input prompts, not five translated answer sets.",
+  "rai:personalSensitiveInformation": "The collection is intended to contain technical schematics and symbolic mathematics. Incidental source text may remain in figures; no exhaustive personal-data screening claim is made.",
+  "rai:dataUseCases": "VLM evaluation and mechanism research on device-control and network-topology reasoning; typical-apparatus references for initial-scale power-system modeling and simulation prototypes. Use independent engineering validation when implementing or applying models.",
+  "rai:dataSocialImpact": "Supports comparison of model perception and engineering reasoning on a curated benchmark. Report dataset versions or hashes and evaluation scope; benchmark output is not engineering certification.",
+  "rai:dataCollection": "Publication figures and engineering schematics were curated into two benchmark tasks. Supplementary network instructions and HTML model descriptions are distributed separately from the image-paired records.",
+  "rai:dataCollectionType": [
+    "Curated technical diagrams and engineering schematics",
+    "Structured multimodal prompts and answers",
+    "Separate model-reference HTML and supplementary instruction arrays"
+  ],
+  "rai:dataPreprocessingProtocol": [
+    "Task/difficulty organization, image selection and replacement, crop cleanup where applicable, and consistency checks of file paths and annotation structure. Historical excluded images and exclusion ledgers are archived outside the formal package."
+  ],
+  "rai:dataAnnotationProtocol": [
+    "Each JSONL object contains id, image, conversations and annotations. conversations is an array of human/gpt turns; the gpt value is a JSON-encoded answer string. annotations is an object containing en, es, ar, fr and ru input prompts."
+  ],
+  "rai:dataReleaseMaintenancePlan": "Update this metadata when resources or schema change; record a dated snapshot and refresh FileObject byte hashes. Historical exclusions are maintained outside the distributed package. Keep the metadata and referenced local directories together.",
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q4929239"
+      },
+      "prov:label": "Data collection (schematic ingest)"
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q4929239"
+      },
+      "prov:label": "Preprocessing (QC, naming, exclusions)"
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q109719325"
+      },
+      "prov:label": "Annotation (JSONL supervision)"
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q4929239"
+      },
+      "prov:label": "Packaging and validation (release)"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "github-repository",
+      "name": "Minegrid-Benchmark repository",
+      "contentUrl": "https://github.com/MuFeng-PowerGrid/Minegrid-Benchmark.git",
+      "encodingFormat": "git+https",
+      "description": "Live Git repository container on main; no fictitious archive checksum is supplied."
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "json-index-ndjson",
+      "name": "Benchmark JSONL batches",
+      "description": "89 JSONL batch files, 1429 accepted records; excludes historical rejection ledgers and supplementary JSON arrays.",
+      "encodingFormat": "application/jsonlines",
+      "includes": [
+        "JSON Index/device_control_*/*.jsonl",
+        "*\\JSON Index\\device_control_*\\*.jsonl",
+        "JSON Index/network_topology_*/*.jsonl",
+        "*\\JSON Index\\network_topology_*\\*.jsonl"
+      ],
+      "containedIn": {
+        "@id": "github-repository"
+      }
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "multimodal-images-jpeg",
+      "name": "Multimodal JPEG images",
+      "description": "JPEG benchmark images referenced by image paths; no documentation graphics or supplementary files.",
+      "encodingFormat": "image/jpeg",
+      "includes": [
+        "Multimodal/apparatus_*/*.jpg",
+        "*\\Multimodal\\apparatus_*\\*.jpg",
+        "Multimodal/network_*/*.jpg",
+        "*\\Multimodal\\network_*\\*.jpg"
+      ],
+      "containedIn": {
+        "@id": "github-repository"
+      }
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "multimodal-images-png",
+      "name": "Multimodal PNG images",
+      "description": "PNG benchmark images referenced by image paths; retain their original lossless format.",
+      "encodingFormat": "image/png",
+      "includes": [
+        "Multimodal/apparatus_*/*.png",
+        "*\\Multimodal\\apparatus_*\\*.png",
+        "Multimodal/network_*/*.png",
+        "*\\Multimodal\\network_*\\*.png"
+      ],
+      "containedIn": {
+        "@id": "github-repository"
+      }
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "json-index-json",
+      "name": "Six benchmark indexes",
+      "description": "Six task/difficulty indexes. The easy device index uses a hyphen; follow stored batch and image paths.",
+      "encodingFormat": "application/json",
+      "includes": [
+        "JSON Index/*_index.json",
+        "*\\JSON Index\\*_index.json",
+        "JSON Index/easy-index.json",
+        "*\\JSON Index\\easy-index.json"
+      ],
+      "containedIn": {
+        "@id": "github-repository"
+      }
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "typical-apparatus-html",
+      "name": "Typical apparatus model descriptions",
+      "description": "16 HTML pages: 14 device families, 46 configurations, directory and model conventions. Model references, not a runnable simulation package.",
+      "encodingFormat": "text/html",
+      "includes": [
+        "Multimodal/Alpaca Data/Apparatus/*.html",
+        "*\\Multimodal\\Alpaca Data\\Apparatus\\*.html"
+      ],
+      "containedIn": {
+        "@id": "github-repository"
+      }
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "supplementary-network-json",
+      "name": "Supplementary network instruction arrays",
+      "description": "32000 JSON files containing 335517 instruction/input/output records, excluded from the 1429 multimodal samples.",
+      "encodingFormat": "application/json",
+      "includes": [
+        "Multimodal/Alpaca Data/Network/**/*.json",
+        "*\\Multimodal\\Alpaca Data\\Network\\**\\*.json"
+      ],
+      "containedIn": {
+        "@id": "github-repository"
+      }
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "supplementary-knowledge-json",
+      "name": "General knowledge example",
+      "description": "One JSON example file containing 39 instruction/input/output records, excluded from the multimodal benchmark.",
+      "encodingFormat": "application/json",
+      "includes": [
+        "Multimodal/Alpaca Data/General Knowledge/*.json",
+        "*\\Multimodal\\Alpaca Data\\General Knowledge\\*.json"
+      ],
+      "containedIn": {
+        "@id": "github-repository"
+      }
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "dataset-readme",
+      "name": "README.md",
+      "description": "Project introduction and usage guide.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/README.md",
+      "encodingFormat": "text/markdown",
+      "sha256": "42190e6cc72ec89ecb2223f2c8b232fdf4723e813d499e8f5d0ef5d069bd3cda"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_easy_v1",
+      "name": "device_control_easy_v1.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_easy_v1/device_control_easy_v1.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "ff383184bad840a673c7e60dd6b5d2e3b8a15283d2b7e275f9ab60dedca80370"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_easy_v2",
+      "name": "device_control_easy_v2.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_easy_v2/device_control_easy_v2.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "3bf7d498a2b063237d5df2a63303c1eaa6ff3610b3e702997dab5ef539d6cbaf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_easy_v3",
+      "name": "device_control_easy_v3.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_easy_v3/device_control_easy_v3.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "2e05678f1eae508d2424da81d7448b9f8b4563b79f56aed48f303112b9ebbe79"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_easy_v4",
+      "name": "device_control_easy_v4.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_easy_v4/device_control_easy_v4.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "98186832c3d799786fa5afb60055ef3e5160e301b3ab2315fb80913cf95a70e3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v1",
+      "name": "device_control_hard_v1.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v1/device_control_hard_v1.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "a95ca2063d2fb3822e701f957cba73f28d061bee6297fce9927ab44d430675bb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v10",
+      "name": "device_control_hard_v10.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v10/device_control_hard_v10.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "d29bfc9fbb1ffd807cdbd5256744b20395f3c7a7d7266187f4f49c0dca77abab"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v11",
+      "name": "device_control_hard_v11.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v11/device_control_hard_v11.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "6b26acdcc1afaeccc35fb9f72575b3b5afe3b82df488bb562ec4470cd79ff3da"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v12",
+      "name": "device_control_hard_v12.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v12/device_control_hard_v12.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "6b82a2a5ec1817b845495b26ded9e950a55307a9f3f1c5ec8e56731e3fb9ac4f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v13",
+      "name": "device_control_hard_v13.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v13/device_control_hard_v13.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "c7a439be6acd2a093594dd16b73aed0ad78844fd7f17143e8fe2b5d262a22fae"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v14",
+      "name": "device_control_hard_v14.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v14/device_control_hard_v14.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "c9474798bd5729a3bb5826684051f9657aa88dbac9a801bb0d9b297a71d6a11b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v15",
+      "name": "device_control_hard_v15.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v15/device_control_hard_v15.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "402f4fc153aed4c1e56faae8f634891488f27599e7bfd0856d3816c4d8c3f157"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v16",
+      "name": "device_control_hard_v16.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v16/device_control_hard_v16.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "030dbc4f718c89f3038c028cda229565194ec6e94bfdbd405d0d27bab4bfb374"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v17",
+      "name": "device_control_hard_v17.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v17/device_control_hard_v17.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "2197a05f9bbb384942866e4a0383dcca6d148d9c630a039a8cec9e414722f928"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v18",
+      "name": "device_control_hard_v18.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v18/device_control_hard_v18.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "6692428c10e6befbe98d0805122a39ae3c014d29bffadbf54a8b7e7b6a99acd1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v19",
+      "name": "device_control_hard_v19.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v19/device_control_hard_v19.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "934fa3c680024395dcab350d7988be9c7c208eccce1ebc55353f7b3059d39880"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v2",
+      "name": "device_control_hard_v2.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v2/device_control_hard_v2.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "bd5f85c100781cd7884114c22ee94d02e913248a73dd1ff1d6d3e39ade9fa7bd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v20",
+      "name": "device_control_hard_v20.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v20/device_control_hard_v20.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "edcf4973c495e43c5fb028f7116e49e8227fb6b21a4167769d99b93c058405f0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v21",
+      "name": "device_control_hard_v21.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v21/device_control_hard_v21.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "ce72ee1558065127ae45ba4c71ae4e4f05b541be4404a60a474cec9b0b4d9268"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v22",
+      "name": "device_control_hard_v22.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v22/device_control_hard_v22.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "21a638a07bee4638e0e548bd2c2252963060aec0df6b76cbf0919e29d2985bfd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v23",
+      "name": "device_control_hard_v23.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v23/device_control_hard_v23.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "e865c643df9da630d411a5acb173d78820aa00a1aaa4fefbac974a20ed1b9541"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v3",
+      "name": "device_control_hard_v3.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v3/device_control_hard_v3.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "5a452debf3b81ab2f455472099b368e61c9f07048aac48d053493c6ca78e96f2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v4",
+      "name": "device_control_hard_v4.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v4/device_control_hard_v4.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "5ad246410732c83991e83a72814fc45f97a5768243ecc046a0af59e78759ab62"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v5",
+      "name": "device_control_hard_v5.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v5/device_control_hard_v5.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "c0d82981ffc0b4b7cb678cd437c1d1cc45ee0b6d59892c6973915243dd6c337a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v6",
+      "name": "device_control_hard_v6.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v6/device_control_hard_v6.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "64fe539d7838d833b0c5b9a8542e5c26db583855a6cea17778b984dd24464c42"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v7",
+      "name": "device_control_hard_v7.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v7/device_control_hard_v7.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "77b8d38675072e33d7855fdba3fb35a236be30e32df068909a59d9da887e5bc1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v8",
+      "name": "device_control_hard_v8.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v8/device_control_hard_v8.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "944b4ebf3f109658de85ad31586eaaea1d2a30815385c9f6741bd58dde1c691e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_hard_v9",
+      "name": "device_control_hard_v9.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_hard_v9/device_control_hard_v9.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "c68d1ea0196faeb84434e9940e01cb19a082a00ece5aa3955fb3149cafb3b3d2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v1",
+      "name": "device_control_medium_v1.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v1/device_control_medium_v1.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "6a0eb4c11a92b874ea20e7b99304d42bdde4dbdfb688bb6ea644c5a7c601d426"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v10",
+      "name": "device_control_medium_v10.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v10/device_control_medium_v10.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "a7f6a96e5d654037f90011df043b1ab2f3b07cdbf8da6b8010bc89193302bb33"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v11",
+      "name": "device_control_medium_v11.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v11/device_control_medium_v11.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "968996b2b5d28b80555b9ec8c5ad24f7f0322ffe2beadf1cef5a278b3ccebd03"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v12",
+      "name": "device_control_medium_v12.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v12/device_control_medium_v12.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "bf2a3f0df938b603381e18bd44891bc5ea80377dd3fb05baebb3ac777d483f2c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v13",
+      "name": "device_control_medium_v13.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v13/device_control_medium_v13.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "b6e99b4ec50b0cebf60ca22ad31339617c87acc6f3a2df3903ce20994140296b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v14",
+      "name": "device_control_medium_v14.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v14/device_control_medium_v14.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "78d5d197f3379b060936b25cc1e65ce14a1ee35771130682aa82151166b9a558"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v15",
+      "name": "device_control_medium_v15.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v15/device_control_medium_v15.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "110df03ef1d76320137af311bc2e77919643a2bcfb531d692674119fed116f0f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v16",
+      "name": "device_control_medium_v16.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v16/device_control_medium_v16.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "61c67585820616357527d0f52c16532641069b5a12dbacccda4fbed214bd4d60"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v17",
+      "name": "device_control_medium_v17.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v17/device_control_medium_v17.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "e3ee6d222a2c5af68be67ea04eaf71e26a33f55aa6c4a6c1eec746ee35eb200a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v18",
+      "name": "device_control_medium_v18.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v18/device_control_medium_v18.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "70baaa9f07cd927ea569f94210abbaed801c4f9ec44711b8a1175ee5e797b7e6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v19",
+      "name": "device_control_medium_v19.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v19/device_control_medium_v19.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "875172de467c63b54e232295957be8aadeef9df18c6155979aca76333b9225ef"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v2",
+      "name": "device_control_medium_v2.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v2/device_control_medium_v2.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "cfb1c29ee812f2dd3895420bb97c2333bb49f121a67098ad17a0b2e7f409149b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v20",
+      "name": "device_control_medium_v20.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v20/device_control_medium_v20.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "ff1418441b71f7f583091512dd939a18b68348164cce32f90a90b80fd2404f30"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v21",
+      "name": "device_control_medium_v21.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v21/device_control_medium_v21.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "76c477eca55edce5047cb1aabea0cfe1c92ed1ac3c8dbc5995e71aed5887675c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v22",
+      "name": "device_control_medium_v22.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v22/device_control_medium_v22.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "6eaa2302bad62bf089e10de203cf526522dac2099dec4fd5a4d2d68e07d83b4e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v23",
+      "name": "device_control_medium_v23.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v23/device_control_medium_v23.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "6fbb13682552e9321e893d84d88a46dde73b97f6ba194aef05d715c8d65d197d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v24",
+      "name": "device_control_medium_v24.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v24/device_control_medium_v24.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "918de7e84c6c20d4fb8cda0bdfd5ce68c67c933e19f793cf911addca7fa4f7ec"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v25",
+      "name": "device_control_medium_v25.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v25/device_control_medium_v25.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "cce44651c9ed9504790d96569a408e922bc1c530f610c1a2e482256b4364af00"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v26",
+      "name": "device_control_medium_v26.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v26/device_control_medium_v26.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "42055af45f9b3644f057a0d88ed0dbea157868be6fc357daf94052aebb6a6099"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v27",
+      "name": "device_control_medium_v27.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v27/device_control_medium_v27.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "7c2dc531596c6c504a4b7120c1844c3a8f40d7cdf0dd51ec03b609dde9f14dc9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v28",
+      "name": "device_control_medium_v28.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v28/device_control_medium_v28.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "3cebf962c362abbe8ea334e546d2f6fb0fe97ebf51a4bbb34819c3d38bc89314"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v29",
+      "name": "device_control_medium_v29.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v29/device_control_medium_v29.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "0a17e4d2a1df6b4b482d7827e2a9dcdea56ac1054694bfa46b867cc7b7904355"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v3",
+      "name": "device_control_medium_v3.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v3/device_control_medium_v3.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "90469f71eaf53d752799497cd7a18e16e94a228f5f66a41f10b9e8c5c9008086"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v30",
+      "name": "device_control_medium_v30.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v30/device_control_medium_v30.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "7844e62e1f556425dd4541d9166acc90675d8139740f962230c5d371fcf8a029"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v31",
+      "name": "device_control_medium_v31.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v31/device_control_medium_v31.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "21a5531cd3db5b493bc16884da474165e9c34861d1f2edf0528ee9b534f6d100"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v32",
+      "name": "device_control_medium_v32.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v32/device_control_medium_v32.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "af20b032a7f346588b601995afb7dcdbbed44647c225eff1c7eabdbec081c2b6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v33",
+      "name": "device_control_medium_v33.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v33/device_control_medium_v33.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "4af4550b9e6c9b57b4ccda2451ca442268d90c091275ac70efe66c34530e56fa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v34",
+      "name": "device_control_medium_v34.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v34/device_control_medium_v34.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "52c429ad5094d19a850b71f4db803f22c5fea3b3692c760220110cdf700edd76"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v35",
+      "name": "device_control_medium_v35.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v35/device_control_medium_v35.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "7c02374025622a25bfca33026794f9cc49a3194472b5beb9d5a91ac3367c10d8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v36",
+      "name": "device_control_medium_v36.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v36/device_control_medium_v36.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "e8cc4fac2986f61768374f7d06de2ad96f88dc92f2d1dced3b29de1e9112a7d4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v37",
+      "name": "device_control_medium_v37.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v37/device_control_medium_v37.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "6e7be0483d0998df745f91f679dba5d5e4dbec546d0e066bc2e4c101179fb47b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v4",
+      "name": "device_control_medium_v4.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v4/device_control_medium_v4.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "cd6351f5d14277458345934cf57e6c75a743d9e4cc9f5e44a6bf63a566e2da91"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v5",
+      "name": "device_control_medium_v5.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v5/device_control_medium_v5.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "97c4b47da99dbd6b13e4e333113e5d7318887660eb75d54610681c52cf94c106"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v6",
+      "name": "device_control_medium_v6.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v6/device_control_medium_v6.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "6107f13b29cf660eaf0711d1609d6851dc73db4be3c8a7b8300f242ecf97e4b2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v7",
+      "name": "device_control_medium_v7.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v7/device_control_medium_v7.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "cc6f75a623c662bcb478340b73152d0feeb3cd210622b9ae898575cd29639a74"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v8",
+      "name": "device_control_medium_v8.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v8/device_control_medium_v8.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "e9b21aac7ca3819c68e91b07631b89e2ed5e1e95376e8ebf4130c30fdbdbffa8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-device_control_medium_v9",
+      "name": "device_control_medium_v9.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/device_control_medium_v9/device_control_medium_v9.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "294005c8964a177590d53e4a7fd14c217a3168a7ea3da14ffa90682a02e5c3e7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_easy_v1",
+      "name": "network_topology_easy_v1.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_easy_v1/network_topology_easy_v1.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "7104ff3216ccd2ca609e70999f4089b5458dafd6ed90b88cbd41eca026cda606"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_easy_v2",
+      "name": "network_topology_easy_v2.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_easy_v2/network_topology_easy_v2.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "ac8b6cb2190b374bfa166f6b8b898e37f1c31b2be2b1bf68b8a0ad79590d35f3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_hard_v1",
+      "name": "network_topology_hard_v1.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_hard_v1/network_topology_hard_v1.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "5b985035d1bfaac4d25e79561589c139c84b547134406efe738014bccc65a043"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_hard_v2",
+      "name": "network_topology_hard_v2.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_hard_v2/network_topology_hard_v2.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "1317bef79af12bdf78a1b592c1d60dd41b7af8cea1a8b54d9e48aa48fb4ba761"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_hard_v3",
+      "name": "network_topology_hard_v3.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_hard_v3/network_topology_hard_v3.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "a75e2ed3ff0c799fa2da015b5c3bc4c00f552f9093fa1faa898438cef5da35e4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_hard_v4",
+      "name": "network_topology_hard_v4.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_hard_v4/network_topology_hard_v4.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "183659c31a161dc854156d4ffe082baf5133aad2b6bcdfb94cfd64fb7623b99f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_hard_v5",
+      "name": "network_topology_hard_v5.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_hard_v5/network_topology_hard_v5.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "9f2b3ab7ca1b1ce0514432d558994410c12054d75b3b185b92d46b749edb6899"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_hard_v6",
+      "name": "network_topology_hard_v6.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_hard_v6/network_topology_hard_v6.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "f66697870cb19d1fe1e05ab7271283d5f05e9d31f01b977869e4d801014d28f0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_hard_v7",
+      "name": "network_topology_hard_v7.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_hard_v7/network_topology_hard_v7.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "48088692e249d028b5e40e40bdda33abbc16200ba21397c2559a87006344ac91"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_hard_v8",
+      "name": "network_topology_hard_v8.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_hard_v8/network_topology_hard_v8.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "98eeff7a2826adb44002548925a63905c59d3e2a1bac4586cfa7ffbefc3e6a29"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_hard_v9",
+      "name": "network_topology_hard_v9.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_hard_v9/network_topology_hard_v9.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "497bc2b52d6acd4a8335395d3c07764fa7db9492621790cb6fbbc3fead342457"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_medium_v1",
+      "name": "network_topology_medium_v1.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_medium_v1/network_topology_medium_v1.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "e88836f1c81feaefece16a5c15717c901bbd0a6e443f1989ecbff61143396396"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_medium_v10",
+      "name": "network_topology_medium_v10.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_medium_v10/network_topology_medium_v10.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "ae7c234fda9695319b34aa63c7485bb20b9e14f3e7bbe1d42f07d602eea12195"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_medium_v11",
+      "name": "network_topology_medium_v11.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_medium_v11/network_topology_medium_v11.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "218565be472a3a99d3258a43b6d88f2116769fdd85022860494502de00da7bb2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_medium_v12",
+      "name": "network_topology_medium_v12.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_medium_v12/network_topology_medium_v12.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "fa1c6e6a894b54242991d8cd78ec1e88ca9140b1a984edaba8d1566ca0c48ce9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_medium_v13",
+      "name": "network_topology_medium_v13.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_medium_v13/network_topology_medium_v13.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "bf96dec18d3cebdddfb968f6084d4989d8e5d6302c206da67067914036b9ba18"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_medium_v14",
+      "name": "network_topology_medium_v14.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_medium_v14/network_topology_medium_v14.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "57a34d6b758d4bc5d01dd5d851f770c373d84120d7ebce7be402cba5be4406d8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_medium_v2",
+      "name": "network_topology_medium_v2.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_medium_v2/network_topology_medium_v2.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "629cc52b062a553aaa4b273d21c350b4a3a8f1d51bbcb14cad46924b30106a41"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_medium_v3",
+      "name": "network_topology_medium_v3.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_medium_v3/network_topology_medium_v3.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "f747c3a86c36fc7b734fe32a7f7c45010464c2f590f10e977dea0e9563a19f6d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_medium_v4",
+      "name": "network_topology_medium_v4.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_medium_v4/network_topology_medium_v4.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "1acaf483acf6c1c98a59235491017af99252082fd8568c6c15f4ecfd3bbeff6c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_medium_v5",
+      "name": "network_topology_medium_v5.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_medium_v5/network_topology_medium_v5.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "5eecc4ff58d1500011e74762339dff627e59f17da7b208a7e9bfe9f306269efb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_medium_v6",
+      "name": "network_topology_medium_v6.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_medium_v6/network_topology_medium_v6.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "fe5c9a4bed8d5d32ec4822de647dc0bc22dfa1858742cbdbfe5ef105aa0dfbac"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_medium_v7",
+      "name": "network_topology_medium_v7.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_medium_v7/network_topology_medium_v7.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "68d293b500d68601d23c3d9fc8eb4260b07d193e4979b0ffade68d2b463dc6c3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_medium_v8",
+      "name": "network_topology_medium_v8.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_medium_v8/network_topology_medium_v8.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "df2d66034b4156575ce7b14f52607c35c14edf9c37ff7207ac96b3735767094d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "batch-network_topology_medium_v9",
+      "name": "network_topology_medium_v9.jsonl",
+      "description": "Immutable batch checksum for this local metadata snapshot.",
+      "contentUrl": "https://raw.githubusercontent.com/MuFeng-PowerGrid/Minegrid-Benchmark/main/JSON%20Index/network_topology_medium_v9/network_topology_medium_v9.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "d4828e7122b7044a07be53e0bb0650cb39ebeb72840a12f33d1b59a11d296eda"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "benchmark-jsonl-sample",
+      "name": "Benchmark JSONL records",
+      "description": "1429 accepted image-paired records: 1035 device-control and 394 network-topology samples, grouped by easy/medium/hard. Difficulty groups are not dataset splits. Four source fields are preserved as text, an array of conversation objects, and a prompt-language object.",
+      "key": {
+        "@id": "benchmark-jsonl-sample/id"
+      },
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark-jsonl-sample/id",
+          "name": "id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "json-index-ndjson"
+            },
+            "extract": {
+              "column": "id"
+            }
+          },
+          "description": "Stable unique sample ID; not an image filename."
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark-jsonl-sample/image",
+          "name": "image",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "json-index-ndjson"
+            },
+            "extract": {
+              "column": "image"
+            }
+          },
+          "description": "Image path relative to the dataset root containing croissant.json; resolve the stored path verbatim."
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark-jsonl-sample/conversations",
+          "name": "conversations",
+          "description": "Ordered human/gpt conversation objects. The gpt value is a JSON string: parse it again to obtain the structured answer.",
+          "isArray": true,
+          "subField": [
+            {
+              "@type": "cr:Field",
+              "@id": "benchmark-jsonl-sample/conversations/from",
+              "name": "from",
+              "dataType": "sc:Text",
+              "source": {
+                "fileSet": {
+                  "@id": "json-index-ndjson"
+                },
+                "extract": {
+                  "column": "conversations"
+                },
+                "transform": {
+                  "jsonPath": "$.from"
+                }
+              }
+            },
+            {
+              "@type": "cr:Field",
+              "@id": "benchmark-jsonl-sample/conversations/value",
+              "name": "value",
+              "dataType": "sc:Text",
+              "source": {
+                "fileSet": {
+                  "@id": "json-index-ndjson"
+                },
+                "extract": {
+                  "column": "conversations"
+                },
+                "transform": {
+                  "jsonPath": "$.value"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark-jsonl-sample/annotations",
+          "name": "annotations",
+          "description": "Translated input prompts in five languages; no translated answers.",
+          "subField": [
+            {
+              "@type": "cr:Field",
+              "@id": "benchmark-jsonl-sample/annotations/en",
+              "name": "en",
+              "dataType": "sc:Text",
+              "source": {
+                "fileSet": {
+                  "@id": "json-index-ndjson"
+                },
+                "extract": {
+                  "column": "annotations"
+                },
+                "transform": {
+                  "jsonPath": "$.en"
+                }
+              }
+            },
+            {
+              "@type": "cr:Field",
+              "@id": "benchmark-jsonl-sample/annotations/es",
+              "name": "es",
+              "dataType": "sc:Text",
+              "source": {
+                "fileSet": {
+                  "@id": "json-index-ndjson"
+                },
+                "extract": {
+                  "column": "annotations"
+                },
+                "transform": {
+                  "jsonPath": "$.es"
+                }
+              }
+            },
+            {
+              "@type": "cr:Field",
+              "@id": "benchmark-jsonl-sample/annotations/ar",
+              "name": "ar",
+              "dataType": "sc:Text",
+              "source": {
+                "fileSet": {
+                  "@id": "json-index-ndjson"
+                },
+                "extract": {
+                  "column": "annotations"
+                },
+                "transform": {
+                  "jsonPath": "$.ar"
+                }
+              }
+            },
+            {
+              "@type": "cr:Field",
+              "@id": "benchmark-jsonl-sample/annotations/fr",
+              "name": "fr",
+              "dataType": "sc:Text",
+              "source": {
+                "fileSet": {
+                  "@id": "json-index-ndjson"
+                },
+                "extract": {
+                  "column": "annotations"
+                },
+                "transform": {
+                  "jsonPath": "$.fr"
+                }
+              }
+            },
+            {
+              "@type": "cr:Field",
+              "@id": "benchmark-jsonl-sample/annotations/ru",
+              "name": "ru",
+              "dataType": "sc:Text",
+              "source": {
+                "fileSet": {
+                  "@id": "json-index-ndjson"
+                },
+                "extract": {
+                  "column": "annotations"
+                },
+                "transform": {
+                  "jsonPath": "$.ru"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "benchmark-jsonl-sample/id": "dev_easy_0001",
+          "benchmark-jsonl-sample/image": "Multimodal/apparatus_easy/apparatus_easy_00055.jpg",
+          "benchmark-jsonl-sample/conversations": [
+            {
+              "benchmark-jsonl-sample/conversations/from": "human",
+              "benchmark-jsonl-sample/conversations/value": "<image>\n请基于图中的控制框图，输出用于动态建模的DAE标注，包含控制单元、输入、状态、输出、微分方程与代数方程。"
+            },
+            {
+              "benchmark-jsonl-sample/conversations/from": "gpt",
+              "benchmark-jsonl-sample/conversations/value": "{\"task\":\"derive_control_dae\",\"difficulty\":\"easy\",\"control_units\":[\"SRF-PLL\",\"reference phase integrator\",\"phase summation\"],\"inputs\":[\"U_q\",\"u_q\",\"omega_0\"],\"states\":[\"xi_e\",\"xi_pi\",\"theta_ref\"],\"outputs\":[\"theta\",\"Delta_theta_pll\"],\"differential_equations\":[\"d(xi_e)/dt = U_q - u_q\",\"d(xi_pi)/dt = xi_e\",\"d(theta_ref)/dt = omega_0\"],\"algebraic_equations\":[\"Delta_theta_pll = k_p*xi_e + k_i*xi_pi\",\"theta = theta_ref + Delta_theta_pll\"],\"notes\":\"U_q and u_q are the reference and feedback q-axis signals. xi_e is their integrated error, and xi_pi is the integral of xi_e. k_p and k_i are the PI gains. omega_0 is the reference angular frequency, theta_ref its integrated phase, Delta_theta_pll the PLL phase correction, and theta the total phase.\"}"
+            }
+          ],
+          "benchmark-jsonl-sample/annotations": {
+            "benchmark-jsonl-sample/annotations/en": "<image>\nBased on the control block diagram in the image, provide DAE annotations for dynamic modeling, including control units, inputs, states, outputs, differential equations, and algebraic equations.",
+            "benchmark-jsonl-sample/annotations/es": "<image>\nA partir del diagrama de bloques de control de la imagen, proporciona anotaciones DAE para el modelado dinámico, incluidas las unidades de control, las entradas, los estados, las salidas, las ecuaciones diferenciales y las ecuaciones algebraicas.",
+            "benchmark-jsonl-sample/annotations/ar": "<image>\nاستنادًا إلى مخطط كتل التحكم في الصورة، قدّم توصيفًا بنظام المعادلات التفاضلية الجبرية (DAE) للنمذجة الديناميكية، يتضمن وحدات التحكم والمدخلات ومتغيرات الحالة والمخرجات والمعادلات التفاضلية والمعادلات الجبرية.",
+            "benchmark-jsonl-sample/annotations/fr": "<image>\nÀ partir du schéma fonctionnel de commande présenté dans l’image, fournissez des annotations DAE pour la modélisation dynamique, comprenant les unités de commande, les entrées, les états, les sorties, les équations différentielles et les équations algébriques.",
+            "benchmark-jsonl-sample/annotations/ru": "<image>\nНа основе структурной схемы управления на изображении представьте аннотацию в форме дифференциально-алгебраических уравнений (DAE) для динамического моделирования, включая блоки управления, входы, состояния, выходы, дифференциальные и алгебраические уравнения."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "supplementary-network",
+      "name": "Supplementary network instructions",
+      "description": "Separate JSON-array instruction records; not part of the multimodal benchmark and no sample ID or image pairing is implied.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "supplementary-network/instruction",
+          "name": "instruction",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "supplementary-network-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].instruction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "supplementary-network/input",
+          "name": "input",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "supplementary-network-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].input"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "supplementary-network/output",
+          "name": "output",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "supplementary-network-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].output"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "supplementary-knowledge",
+      "name": "Supplementary knowledge instructions",
+      "description": "Separate JSON-array instruction records; not part of the multimodal benchmark and no sample ID or image pairing is implied.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "supplementary-knowledge/instruction",
+          "name": "instruction",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "supplementary-knowledge-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].instruction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "supplementary-knowledge/input",
+          "name": "input",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "supplementary-knowledge-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].input"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "supplementary-knowledge/output",
+          "name": "output",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "supplementary-knowledge-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].output"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "dateModified": "2026-11-05",
+  "inLanguage": [
+    "zh",
+    "en",
+    "es",
+    "ar",
+    "fr",
+    "ru"
+  ],
+  "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "A Large Language Model-Based Framework for Automated Dynamic Simulation of Power Systems",
+      "identifier": "10.1109/TSG.2026.3731592",
+      "url": "https://doi.org/10.1109/TSG.2026.3731592"
+    }
+  ],
+  "isLiveDataset": true
+}
